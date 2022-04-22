@@ -128,12 +128,13 @@ p {
     width: 90%;
 }
 
-h3 {
+a h3 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     padding: 16px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     width: 100%;
