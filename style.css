@@ -6,33 +6,30 @@
     list-style: none;
 }
 
-body {
-    background: linear-gradient(rgba(222, 159, 159, 0.573), rgba(93, 24, 24, 0.628));
-    height: 1030px;
-    background-repeat: no-repeat;
-    justify-content: center;
+.container {
+    width: 100%;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba(0, 0, 25, 0.743);
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.center {
     border-radius: 15px;
-    width: 40vw;
-    height: 125vh;
-    position: absolute;
+    width: 50%;
+    height: 950px;
+    background-color: rgba(142, 124, 124, 0.23);
+    /* box-shadow: 1px 1px 11px 0.1px rgba(82, 15, 15, 0.771); */
+    box-shadow: 1px 1px 11px 0.1px rgb(82, 15, 15);
 }
 
 .wrapx {
     border-top: 1px solid rgba(71, 16, 16, 0.8);
     border-bottom: 1px solid rgba(71, 16, 16, 0.8);
-    width: 36.6vw;
-    height: 125vh;
+    width: 45.6vw;
+    height: 950.9px;
     position: absolute;
     animation: wrapx 39s linear infinite;
     position: absolute;
@@ -42,10 +39,10 @@ body {
     border-left: 1px solid rgba(71, 16, 16, 0.8);
     border-right: 1px solid rgba(71, 16, 16, 0.8);
     display: flex;
-    /* flex-direction: column;
-    align-items: center; 
-     justify-content: center; */
-    width: 40.1vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
     height: 116vh;
     position: absolute;
     animation: wrapy 39s linear infinite;
@@ -61,14 +58,6 @@ body {
     to {
         transform: rotatey(360deg);
     }
-}
-
-.center {
-    border-radius: 15px;
-    width: 40vw;
-    height: 125vh;
-    background-color: rgba(142, 124, 124, 0.186);
-    box-shadow: 1px 1px 11px 0.1px rgba(82, 15, 15, 0.771);
 }
 
 
@@ -121,6 +110,7 @@ p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    font-family: Montserrat;
 }
 
 .links {
@@ -142,6 +132,8 @@ a h3 {
     border-radius: 20px;
     transition: all ease;
     color: black;
+    font-family: montserrat;
+    font-weight: 900;
 }
 
 h3:hover {
@@ -152,40 +144,36 @@ h3:hover {
     padding-top: 30px;
     color: red;
     text-align: center;
+    font-family: Roboto;
 }
 
 .percent {
     padding-bottom: 30px;
     color: red;
+    font-family: Roboto;
 }
 
-@media(max-width:600px) {
-    .wrapper {
-        /* border: 1px solid red; */
-        /* background-color: aliceblue; */
-        width: 99%;
-        height: 132%;
-    }
+@media(max-width:800px) {
     .center {
-        width: 99%;
-        height: 133%;
+        width: 95%;
     }
     .wrapx {
-        width: 93%;
-        height: 132%;
-        border-top: 1px solid rgba(71, 16, 16, 0.8);
-        border-bottom: 1px solid rgba(71, 16, 16, 0.8);
+        width: 94%;
+        /* border-top: 2px solid rgba(71, 16, 16, 0.8);
+        border-bottom: 2px solid rgba(71, 16, 16, 0.8); */
+        border-top: 2px solid rgba(188, 49, 49, 0.403);
+        border-bottom: 2px solid rgba(188, 49, 49, 0.403);
     }
     .wrapy {
-        height: 95%;
-        width: 99%;
-        border-left: 1px solid rgba(71, 16, 16, 0.8);
-        border-right: 1px solid rgba(71, 16, 16, 0.8);
+        width: 95%;
+        border-left: 2px solid rgba(188, 49, 49, 0.403);
+        border-right: 2px solid rgba(188, 49, 49, 0.403);
     }
     h1 {
         font-size: 2.0rem;
     }
     /* body {
-       
+        width: 100% !important;
+        height: 1000px;
     } */
 }
