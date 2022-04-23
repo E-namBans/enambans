@@ -24,7 +24,7 @@ body {
     justify-content: center;
     border-radius: 15px;
     width: 40vw;
-    height: 120vh;
+    height: 125vh;
     position: absolute;
 }
 
@@ -32,7 +32,7 @@ body {
     border-top: 1px solid rgba(71, 16, 16, 0.8);
     border-bottom: 1px solid rgba(71, 16, 16, 0.8);
     width: 36.6vw;
-    height: 120vh;
+    height: 125vh;
     position: absolute;
     animation: wrapx 39s linear infinite;
     position: absolute;
@@ -66,7 +66,7 @@ body {
 .center {
     border-radius: 15px;
     width: 40vw;
-    height: 120vh;
+    height: 125vh;
     background-color: rgba(142, 124, 124, 0.186);
     box-shadow: 1px 1px 11px 0.1px rgba(82, 15, 15, 0.771);
 }
@@ -146,4 +146,46 @@ a h3 {
 
 h3:hover {
     box-shadow: 0px 7px 2px 1px rgba(82, 15, 15, 0.4);
+}
+
+.construction {
+    padding-top: 30px;
+    color: red;
+    text-align: center;
+}
+
+.percent {
+    padding-bottom: 30px;
+    color: red;
+}
+
+@media(max-width:600px) {
+    .wrapper {
+        /* border: 1px solid red; */
+        /* background-color: aliceblue; */
+        width: 99%;
+        height: 132%;
+    }
+    .center {
+        width: 99%;
+        height: 133%;
+    }
+    .wrapx {
+        width: 93%;
+        height: 132%;
+        border-top: 1px solid rgba(71, 16, 16, 0.8);
+        border-bottom: 1px solid rgba(71, 16, 16, 0.8);
+    }
+    .wrapy {
+        height: 95%;
+        width: 99%;
+        border-left: 1px solid rgba(71, 16, 16, 0.8);
+        border-right: 1px solid rgba(71, 16, 16, 0.8);
+    }
+    h1 {
+        font-size: 2.0rem;
+    }
+    /* body {
+       
+    } */
 }
