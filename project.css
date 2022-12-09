@@ -36,3 +36,7 @@ a:hover {
     color: red;
     color: red;
 }
+
+nav ul li {
+    list-style: none;
+}
