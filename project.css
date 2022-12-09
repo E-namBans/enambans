@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+li {
+    margin-bottom: 10px;
+    list-style: decimal;
+    margin-left: 30px;
+    font-weight: 100;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+.links_project {
+    justify-content: center;
+    align-items: center;
+}
+
+#links_project {
+    margin-top: 5%;
+}
+
+a:hover {
+    color: red;
+    color: red;
+}
