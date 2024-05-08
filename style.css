@@ -15,11 +15,11 @@
     justify-content: center;
     /* background-color: rgba(0, 0, 25, 0.743); */
     /* background-color: rgb(48, 92, 128) !important; */
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
     height: 100%;
-	
+	background-color: rgb(14, 3, 59);
 }
 
 @keyframes gradient {
@@ -40,9 +40,9 @@
     border-radius: 15px;
     width: 50%;
     height: 950px;
-    background-color: rgba(142, 124, 124, 0.23);
+    /* background-color: rgba(142, 124, 124, 0.23); */
     /* box-shadow: 1px 1px 11px 0.1px rgba(82, 15, 15, 0.771); */
-    box-shadow: 1px 1px 11px 0.1px rgb(82, 15, 15);
+    /* box-shadow: 1px 1px 11px 0.1px rgb(82, 15, 15); */
 }
 
 
@@ -60,7 +60,7 @@
 .outer {
     width: 7.0rem;
     aspect-ratio: 1;
-    border-bottom: 1px solid red;
+    border-bottom: 3px solid rgb(252, 248, 248);
     border-radius: 50%;
     animation: spin 4s linear infinite;
 }
@@ -68,7 +68,7 @@
 .inner {
     width: 7.0rem;
     aspect-ratio: 1;
-    border-top: 1px solid rgb(73, 16, 179);
+    border-top: 3px solid rgb(20, 218, 191);
     border-radius: 50%;
     animation: spin 4s reverse infinite;
 }
@@ -89,15 +89,18 @@
     justify-content: center;
 }
 
-h1,
-p {
+h1
+{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-family: Montserrat;
+    font-family: HARTWELL ALT;
+    font-weight: 500;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
 }
 
 .links {
@@ -115,16 +118,16 @@ a h3 {
     align-items: center;
     position: relative;
     width: 100%;
-    background-color: rgba(70, 50, 50, 0.073);
+    background-color: rgba(109, 223, 217, 0.205);
     border-radius: 20px;
     transition: all ease;
-    color: black;
-    font-family: montserrat;
-    font-weight: 900;
+    color: rgb(255, 255, 255);
+    font-family: HARTWELL ALT;
+    font-weight: 600;
 }
 
 h3:hover {
-    box-shadow: 0px 7px 2px 1px rgba(82, 15, 15, 0.4);
+    box-shadow: 0px 7px 2px 1px rgba(255, 255, 255, 0.966);
 }
 
 /* .construction {
@@ -140,20 +143,24 @@ h3:hover {
     font-family: Roboto;
 } */
 #MAIN-SITE-LINK {
-    background: linear-gradient(-45deg, #856e688f, #aca0a433, #23a5d52d, #23d5b7af);
-    
+    /* background: linear-gradient(-45deg, #856e688f, #aca0a433, #23a5d52d, #23d5b7af); */
+    background: rgb(125, 200, 250);
     padding: 15px 32px;
     text-align: center;
     text-decoration:dotted;
     display: inline-block;
     font-size: 16px;
     margin: 15px;
+    font-family: Montserrat;
+    color: black;
     
+   
   }
 
 #MAIN-SITE-LINK a:hover{
     color: red;
     width: 30%;
+    
 }
 
 

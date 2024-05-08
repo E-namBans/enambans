@@ -5,37 +5,38 @@
 }
 body{
     overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #38A2D7, #561139); 
   
 }
-.container{
-    background-color: rgb(21, 51, 51);   
 
-}
 
    .container .box{
-    width: 25vh;
-    height: 22vh;
-    border: 8px solid rgb(140, 148, 28);
+    width: 29vh;
+    height: 29vh;
+    border: 19px solid rgb(140, 148, 28);
     margin-left: 5%;
     position: absolute;
-    border-right: 5px solid rgba(185, 223, 16, 0);
-    border-bottom: 5px solid rgba(185, 223, 16, 0);
+    border-right: 25px solid rgba(185, 223, 16, 0);
+    border-bottom: 25px solid rgba(185, 223, 16, 0);
   
    }
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 18vh;
-    background-color: rgb(21, 51, 51);   
+    min-height: 14vh;
+
+      
 }
 
 .logo h5{
-    color: rgb(14, 6, 6);
+    color: rgb(248, 244, 244);
     text-transform: uppercase;
-    letter-spacing: 0.03px;
+    letter-spacing: 0.09px;
 font-size: 10px;
-background-color: bisque;
+
 }
 
 .nav-links{
@@ -47,6 +48,11 @@ background-color: bisque;
 
 .nav-links li {
     list-style: none;
+}
+.nav-links li :hover{
+    color: aliceblue;
+    font-size:medium;
+    
 }
 
 .nav-links a {
@@ -110,25 +116,34 @@ body{
 }
 
 .wraper{
-    height: 50vh;
-    width: 90vh;
-    
-    margin-left: 40vh;
+    height: 31vh;
+    width: 60vh;
+    border: 1px solid red;
+    margin-left: 10vh;
     margin-top: 20vh;
 }
 footer{
-    position: relative;
-    width: 30px;
-    height: 50px;
-    border: 1px solid red;
+   height: 100vh;
+   
+    
+    
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+
+footer h5{
+    margin-top: 22vh;
+    
 }
 footer .box{
-    width: 25vh;
-    height: 22vh;
-    border: 8px solid rgb(140, 148, 28);
-    margin-left: -50%;
-    position: absolute;
-    border-right: 5px solid rgba(185, 223, 16, 0);
-    border-bottom: 5px solid rgba(185, 223, 16, 0);
+    width: 29vh;
+    height: 29vh;
+  margin-bottom: -296px;
+  margin-right: 5%;
+   border: 19px solid rgb(140, 148, 28);
+    border-left: 15px solid rgba(185, 223, 16, 0);
+    border-top: 15px solid rgba(185, 223, 16, 0);
 
    }
