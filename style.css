@@ -45,40 +45,7 @@
     box-shadow: 1px 1px 11px 0.1px rgb(82, 15, 15);
 }
 
-.wrapx {
-    border-top: 1px solid rgba(71, 16, 16, 0.8);
-    border-bottom: 1px solid rgba(71, 16, 16, 0.8);
-    width: 45.6vw;
-    height: 950.9px;
-    position: absolute;
-    animation: wrapx 39s linear infinite;
-    position: absolute;
-}
 
-.wrapy {
-    border-left: 1px solid rgba(71, 16, 16, 0.8);
-    border-right: 1px solid rgba(71, 16, 16, 0.8);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 116vh;
-    position: absolute;
-    animation: wrapy 39s linear infinite;
-}
-
-@keyframes wrapy {
-    to {
-        transform: rotateX(360deg);
-    }
-}
-
-@keyframes wrapx {
-    to {
-        transform: rotatey(360deg);
-    }
-}
 
 
 /*===========*/
@@ -189,22 +156,34 @@ h3:hover {
     width: 30%;
 }
 
-@media(max-width:800px) {
+
+@media(max-width:412px) {
     .center {
         width: 95%;
     }
-    .wrapx {
-        width: 94%;
-        /* border-top: 2px solid rgba(71, 16, 16, 0.8);
-        border-bottom: 2px solid rgba(71, 16, 16, 0.8); */
-        border-top: 2px solid rgba(188, 49, 49, 0.403);
-        border-bottom: 2px solid rgba(188, 49, 49, 0.403);
+    
+    h1 {
+        font-size: 2.0rem;
     }
-    .wrapy {
+    body {
+        width: 100% !important;
+  
+    }
+    .container{
+        height: 200vh !important;
+    }
+ 
+}
+
+
+
+@media(max-width:800px) {
+    .center {
         width: 95%;
-        border-left: 2px solid rgba(188, 49, 49, 0.403);
-        border-right: 2px solid rgba(188, 49, 49, 0.403);
+        height: 300vh;
+        border: 4px solid green;
     }
+   
     h1 {
         font-size: 2.0rem;
     }
@@ -213,7 +192,7 @@ h3:hover {
         height: 1000px;
     } */
     .container{
-        height: 100vh;
+        height: 100px !important;
     }
 }
 
@@ -221,19 +200,7 @@ h3:hover {
     .center {
         width: 95%;
     }
-    .wrapx {
-        width: 44%;
-        /* border-top: 2px solid rgba(71, 16, 16, 0.8);
-        border-bottom: 2px solid rgba(71, 16, 16, 0.8); */
-        border-top: 2px solid rgba(188, 49, 49, 0.403);
-        border-bottom: 2px solid rgba(188, 49, 49, 0.403);
-    }
-    .wrapy {
-        height: 40%;
-        width: 95%;
-        border-left: 2px solid rgba(188, 49, 49, 0.403);
-        border-right: 2px solid rgba(188, 49, 49, 0.403);
-    }
+   
     h1 {
         font-size: 2.0rem;
     }
@@ -243,29 +210,17 @@ h3:hover {
     }
 }
  
-@media(max-width:1024px) {
+@media(max-width:540px) {
     .center {
         width: 95%;
     }
-    .wrapx {
-        width: 44%;
-        /* border-top: 2px solid rgba(71, 16, 16, 0.8);
-        border-bottom: 2px solid rgba(71, 16, 16, 0.8); */
-        border-top: 2px solid rgba(188, 49, 49, 0.403);
-        border-bottom: 2px solid rgba(188, 49, 49, 0.403);
-    }
-    .wrapy {
-        height: 40%;
-        width: 95%;
-        border-left: 2px solid rgba(188, 49, 49, 0.403);
-        border-right: 2px solid rgba(188, 49, 49, 0.403);
-    }
+   
     h1 {
         font-size: 2.0rem;
     }
    
     .container{
-        height: 175vh !important;
+        height: 1005px !important;
     }
 }
 
@@ -273,19 +228,7 @@ h3:hover {
     .center {
         width: 95%;
     }
-    .wrapx {
-        width: 94%;
-        /* border-top: 2px solid rgba(71, 16, 16, 0.8);
-        border-bottom: 2px solid rgba(71, 16, 16, 0.8); */
-        border-top: 2px solid rgba(188, 49, 49, 0.403);
-        border-bottom: 2px solid rgba(188, 49, 49, 0.403);
-    }
-    .wrapy {
-        height: 40%;
-        width: 95%;
-        border-left: 2px solid rgba(188, 49, 49, 0.403);
-        border-right: 2px solid rgba(188, 49, 49, 0.403);
-    }
+    
     h1 {
         font-size: 2.0rem;
     }
