@@ -3,32 +3,30 @@
     padding: 0px;
 
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     overflow-y: hidden;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom right, #38A2D7, #561139); 
+    background-image: linear-gradient(to bottom right, rgb(64, 47, 131), #162c41); 
+    overflow-x: hidden !important;
   
 }
 
 
-   .container .box{
-    width: 29vh;
-    height: 29vh;
-    border: 19px solid rgb(140, 148, 28);
-    margin-left: 5%;
-    position: absolute;
-    border-right: 25px solid rgba(185, 223, 16, 0);
-    border-bottom: 25px solid rgba(185, 223, 16, 0);
-  
-   }
+   
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 14vh;
-
-      
+    min-height: 14vh;  
+    z-index: 1; 
+    background-color: red;
+   
 }
 
 .logo h5{
@@ -40,110 +38,150 @@ font-size: 10px;
 }
 
 .nav-links{
+    height: 40px;
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 45%;
+    
+    align-items: center;
     
 }
 
 .nav-links li {
     list-style: none;
+   
 }
 .nav-links li :hover{
     color: aliceblue;
-    font-size:medium;
-    
+  font-weight: bolder;
 }
 
 .nav-links a {
-    color: rgb(17, 17, 10);
+    color: rgb(245, 245, 245);
     text-decoration: none;
+    text-decoration-color: white;
     letter-spacing: 1px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
+    transition: 0.3s ease;
     
 }
-.burger{
+
+.nav-links a:hover{
+    color:rgb(126, 121, 121);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+/* input{
     display: none;
-}
-.burger div{
-    width: 25px;
-    height: 2.3px;
-    background-color: #000000;
-    margin: 5px;
-    cursor: pointer;
-}
+} */
 
-@media screen and (max-width: 1024px){
-    .nav-links{
-       
-        width: 48%;
-        background-color: blue;
-    }
 
-   
-    
-}
-
-@media screen and (max-width: 768px){
-    .nav-links{
-       position: absolute;
-       right: 0px;
-       height: 75vh;
-       top: 18vh;
-       background-color: rgb(105, 107, 106);
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       width: 25%;
-       transform: translateX(100%);
-       transition: tranform 0.5s ease-in;
-    }
-
-body{
-    overflow-x: hidden;
-}
-.nav-links li{
-    opacity: 0;
-}
-.burger{
-    display: block;
-}
-.nav-active{
-    transform: translateX(0);
-}
+.circle{
+    width: 100vh;
+    height: 100vh;
+    border-radius: 50%;
+  position: absolute;
+  background-color: #fffbfb36;
+  margin-left: 70%;
+  margin-top: -30%;
+  z-index: -1 ;
+  
 
 }
 
-.wraper{
+.wraper {
     height: 31vh;
     width: 60vh;
     border: 1px solid red;
     margin-left: 10vh;
     margin-top: 20vh;
 }
+
+.wraper h4{
+    font-size: 18vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* FOOTER */
 footer{
-   height: 100vh;
-   
+    height: 100vh;   
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ footer h5{
+     margin-top: 22vh;
+     
+ }
+
+
+/* MEDIA SCREEN FOR RESPOSIVE SITE */
+@media screen and (max-width: 1024px){
+    .nav-links{
+               width: 48%;
+        }    
+}
+/* MEDIA AT 768 main mobile */
+@media screen and (max-width: 768px){
+    .nav-links{
+       position: absolute;
+       right: 24vh;
+       height: 75vh;
+       padding-top: 59px;
+       top: 0vh;
+       background-color: rgba(68, 72, 143, 0.404);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 24vh;
+       transform: translateX(100%);
+       transition: tranform 0.5s ease-in;
+      
+    }
+
+
+
+
+
+ label{
     
-    
-    display: flex;
-    justify-content: space-between;
-  
+    width: 45px;
+    height: 30px;
+    position: relative;
+ }
+
+ label div{
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-50%);
+    border-radius: 99px;
+
+ }
+label div:nth-child(1){
+    top: 0% ;
+}
+label div:nth-child(2){
+    top: 50% ;
+}
+
+label div:nth-child(3){
+    top: 100%;
+}
+
+input:checked + header nav{
+height: 100vh;
 
 }
 
-footer h5{
-    margin-top: 22vh;
-    
-}
-footer .box{
-    width: 29vh;
-    height: 29vh;
-  margin-bottom: -296px;
-  margin-right: 5%;
-   border: 19px solid rgb(140, 148, 28);
-    border-left: 15px solid rgba(185, 223, 16, 0);
-    border-top: 15px solid rgba(185, 223, 16, 0);
 
-   }
+
+
+}
+
+
+
+
+
