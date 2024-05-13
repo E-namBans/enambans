@@ -8,7 +8,7 @@
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: 1000vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,13 +16,13 @@
     /* background-color: rgba(0, 0, 25, 0.743); */
     /* background-color: rgb(48, 92, 128) !important; */
     /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+	/* background-size: 400% 400%;
+	animation: gradient 10s ease infinite; */
     height: 100%;
 	background-color: rgb(14, 3, 59);
 }
 
-@keyframes gradient {
+/* @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -32,45 +32,58 @@
 	100% {
 		background-position: 0% 50%;
 	}
-}
+} */
 
 
 .center {
     margin: 50px;
-    border-radius: 15px;
     width: 50%;
-    height: 950px;
-    /* background-color: rgba(142, 124, 124, 0.23); */
-    /* box-shadow: 1px 1px 11px 0.1px rgba(82, 15, 15, 0.771); */
-    /* box-shadow: 1px 1px 11px 0.1px rgb(82, 15, 15); */
+   height: 100%;
+   padding-bottom: 30PX;
 }
 
-
-
-
-/*===========*/
-
+/*=====LOGO======*/
 .img {
     display: flex;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    height: 180px;
+   
+}
+.img-logo{
+    position: absolute;
 }
 
 .outer {
-    width: 7.0rem;
+    position: absolute;
     aspect-ratio: 1;
-    border-bottom: 3px solid rgb(252, 248, 248);
+    border-bottom: 5px solid rgb(252, 248, 248);
     border-radius: 50%;
-    animation: spin 4s linear infinite;
+    animation: spin 3s linear infinite;
+    width: 11.0rem;
 }
 
+
 .inner {
-    width: 7.0rem;
+    width: 11.0rem;
+
     aspect-ratio: 1;
-    border-top: 3px solid rgb(20, 218, 191);
+    border-top: 5px solid rgb(75, 183, 226);
     border-radius: 50%;
-    animation: spin 4s reverse infinite;
+    animation: spin 3s reverse infinite;
+}
+
+  .in img{
+position: relative;
+    width: 10.4rem;
+top: 6px;
+right: -5px;
+
+
+
 }
 
 
@@ -130,37 +143,28 @@ h3:hover {
     box-shadow: 0px 7px 2px 1px rgba(255, 255, 255, 0.966);
 }
 
-/* .construction {
-    padding-top: 30px;
-    color: red;
-    text-align: center;
-    font-family: Roboto;
-}
 
-.percent {
-    padding-bottom: 30px;
-    color: red;
-    font-family: Roboto;
-} */
+
 #MAIN-SITE-LINK {
-    
+
     background: rgb(125, 200, 250);
     padding: 15px 32px;
+
     text-align: center;
     text-decoration:dotted;
     display: inline-block;
     font-size: 16px;
     margin: 15px;
-    font-family: Montserrat;
+     font-family: HARTWELL ALT;
     color: black;
-    
-   
+font-weight: 900px;
+
   }
 
 #MAIN-SITE-LINK :hover{
-    color: rgb(243, 239, 239);
-  
-    
+    color: rgb(255, 255, 255);
+
+
 }
 
 
@@ -168,18 +172,18 @@ h3:hover {
     .center {
         width: 95%;
     }
-    
+
     h1 {
         font-size: 2.0rem;
     }
     body {
         width: 100% !important;
-  
+
     }
     .container{
         height: 200vh !important;
     }
- 
+
 }
 
 
@@ -188,9 +192,9 @@ h3:hover {
     .center {
         width: 95%;
         height: 300vh;
-       
+
     }
-   
+
     h1 {
         font-size: 2.0rem;
     }
@@ -207,7 +211,7 @@ h3:hover {
     .center {
         width: 95%;
     }
-   
+
     h1 {
         font-size: 2.0rem;
     }
@@ -216,16 +220,16 @@ h3:hover {
         height: 132vh !important;
     }
 }
- 
+
 @media(max-width:540px) {
     .center {
         width: 95%;
     }
-   
+
     h1 {
         font-size: 2.0rem;
     }
-   
+
     .container{
         height: 1005px !important;
     }
@@ -235,7 +239,7 @@ h3:hover {
     .center {
         width: 95%;
     }
-    
+
     h1 {
         font-size: 2.0rem;
     }
