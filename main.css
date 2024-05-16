@@ -2,8 +2,8 @@
     margin: 0px;
     padding: 0px;
     font-family: HARTWELL ALT !important;
+    scrollbar-color:   #0cdceb #0e033b;
 }
-
 /* GENERAL STYLE */
 h2{
     color: rgb(255, 238, 0);
@@ -31,17 +31,15 @@ html{
 
 body{
     overflow-y: hidden;
-    width: 100%;
+
+    /* width: 100%; */
     height: 100%;
-    background-color: rgb(14, 3, 59);
+    background-color: #0e033b;
     overflow-x: hidden ;
     margin-bottom: 170px;
-    border: solid;
+
 }
 
-/* body:hover{
-    background-color: white;
-} */
 
 nav{
     display: flex;
@@ -49,45 +47,42 @@ nav{
     align-items: center;
     min-height: 8vh;
     z-index: 1;
-    background-color: rgb(1, 0, 5);
+    background-color: rgba(1, 0, 5, 0.925);
     position: fixed;
     top: 0;
     width: 100%;
     overflow: hidden;
-}
-
-.logo h5{
-    color: rgb(235, 225, 225);
-    text-transform: uppercase;
-    letter-spacing: 0.09px;
-font-size: 1.7rem;
+border-bottom: 1px solid rgb(31, 101, 122);
 
 }
-.logo h5:hover{
-   color: white;
-font-weight: bolder;
 
+nav .logo{
+margin-top: 12px;
+margin-left: -22vh;
+margin-bottom: 12px;
+transition:  0.3s ease;
+}
+.logo img{
+   height: 10vh;
+}
+.logo:hover{
+transform: scale(1.1);
 }
 
 .nav-links{
     height: 40px;
     display: flex;
     justify-content: space-around;
-    width: 35%;
+    width: 45%;
     align-items: center;
     margin-right: -80vh;
 }
 
-.nav-links li {
-    list-style: none;
-}
-.nav-links li :hover{
-    color: aliceblue;
-  font-weight: bolder;
-}
+
+
 
 .nav-links a {
-    color: rgb(245, 245, 245);
+    color: rgb(247, 247, 247);
     text-decoration: none;
     text-decoration-color: white;
     letter-spacing: 1.5px;
@@ -96,14 +91,15 @@ font-weight: bolder;
     transition: 0.4s ease;
     font-family: HARTWELL ALT;
     text-transform: uppercase;
-
 }
 
 .nav-links a:hover{
-    color:rgb(156, 149, 149);
+    color:#09e2f1;
     text-decoration: underline;
     text-underline-offset: 1rem;
 }
+
+/* MOBILE HANDBURGER */
 input{
     display: none;
 }
@@ -118,58 +114,200 @@ input{
   margin-left: 70%;
   margin-top: -30%;
   z-index: -1 ;
+position: fixed;
+
+}
+/* SECTION1 HOME */
+section {
+   min-height: 100vh;
+   padding: 10rem 4% 10rem;
+   border: solid;
+}
+
+/* HOME-CONTENT */
+.home{
+    display: flex;
+}
+
+.home-wrapper{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+
+
+.home-left{
+    width: 50%;
 
 }
 
-.wraper {
-    height: 71vh;
-    width: 99vh;
-    margin-left: 11vh;
-    margin-top: 20vh;
 
-
-}
-
-.wraper h1{
+.home-wrapper h1{
     font-size: 16vh;
     font-family: hartwell-alt;
-
-
-}.wraper h2{
-    margin-left: 45px;
-    margin-top: -20px;
-
-}
-
-.wraper h1 {
     color: #e7fffe;
     font-size: 8.4rem;
 }
-.wraper .para {
-   background-color: rgba(0, 0, 0, 0.281);
+
+.home-wrapper h1 span{
+    color: #09e2f1;
 }
 
-.wraper .para p{
+.animation{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+ font-family: hartwell-alt;
+}
 
-    margin-top: 20px;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-    padding-top: 23px !important;
+.animation span{
+    position: relative;
 
 }
 
-
-/* PROJECTS SECTION */
-#About{
-
-    width: 80%;
-background-color: rgb(17, 9, 51);
-    text-align:left;
-padding: 30PX;
-    height: fit-content;
-    margin:auto;
+.animation span::before{
+    content: "Frontend Developer";
+    color: #0cdceb;
+    animation: words 20s infinite;
 }
+.animation span::after{
+content: "";
+background-color:rgb(14, 3, 59);
+position: absolute;
+width: calc(100% + 8px);
+height: 100%;
+border-left: 3px solid rgb(7, 231, 247);
+right: -10px;
+animation: cursor 0.6s infinite, typing 20s steps(30) infinite
+}
+@keyframes cursor{
+    to{
+        border-left: 4px solid rgb(82, 81, 81);
+    }
+}
+@keyframes words{
+    0%,
+    20%{
+        content: "Frontend Developer";
+    }
+    21%,40%{
+        content: "Designer";
+    }
+    41%,60%{
+        content: "UI / UX Designer";
+    }
+    61%,80%{
+        content: "Web Developer";
+    }
+    81%,100%{
+    content: "Software Tester";
+    }
+}
+
+@keyframes typing{
+    10%,
+    15%,
+    20%,
+    35%,
+    40%,
+    45%,
+    50%,
+    55%,
+    60%,
+    65%,
+    70%,
+    75%,
+    80%,
+    85%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+width: calc(100% + 9px);
+    }
+}
+
+.home-wrapper P{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.9;
+    max-width: 1000px;
+}
+
+/* HOME RIGHT IMAGE */
+
+.home-wrapper .home-right img{
+    width: 56vh;
+    height: 56vh;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #09e2f1 ;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border-top: 12px solid rgb(0, 255, 255);
+    border-bottom: 2px solid;
+    z-index: 22;
+}
+.home-wrapper .home-right img:hover{
+   box-shadow: 0 0 40px #09e2f1,
+   0 0 60px #09e2f1,
+   0 0 90px #09e2f1;
+}
+ /* .circle2{
+    position:fixed;
+border:1px solid rgb(229, 255, 0);
+width: 113vh;
+height:113vh ;
+border-radius: 50%;
+top: 572px;
+z-index: -1;
+
+}
+ */
+
+
+
+
+/* SECTION3 ABOUT */
+
+
+
+
+
+
+
+/* PROJECTS SECTION3 */
+.heading{
+    margin-bottom: 5rem;
+}
+.projects-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 80px;
+}
+
+ #project-img  img{
+    width: 56vh;
+    height: 56vh;
+border: 3px solid yellowgreen;
+    box-shadow: 0 0 30px #09e2f1 ;
+}
+
+#project-img  img:hover{
+  border: 3px solid #09e2f1 ;
+  transform: translateY(-10px)scale(1.05);
+}
+
 
 
 
