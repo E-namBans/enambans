@@ -619,5 +619,32 @@ input:checked + header label div:nth-child(1) {
         }
 
 
+        .projects-wrapper{
+            display: grid;
+            grid-template-columns: 1fr  ;
+
+
+
+
+margin: auto;
+        }
+
+.contact form{
+    display: grid;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.card{
+    max-width: 70%;
+}
+
+
+
+
+
 }
 
