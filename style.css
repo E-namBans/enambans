@@ -168,7 +168,7 @@ font-weight: 900px;
 }
 
 /* Media Queries */
-/* @media(max-width:412px) {
+@media(max-width:412px) {
     .center {
         width: 95%;
     }
@@ -184,7 +184,7 @@ font-weight: 900px;
         height: 200vh !important;
         background-color: red;
     }
-} */
+}
 
 @media(max-width:1180px) {
     .center {
