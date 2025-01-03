@@ -88,13 +88,13 @@ body {
 
 
 /* Main Content Styles */
-#main-content {
+/* #main-content {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   background: #111;
-}
+} */
   
   /* Header styles */
   header {
@@ -112,6 +112,7 @@ body {
   display: inline-block;
   cursor: pointer;
   font-size: 1.5rem;
+  /* margin-top: -40px; */
  margin-left: 95%;
   border-radius: 50%;
   transition: border-color 0.5s ease;
@@ -128,9 +129,9 @@ body.dark-mode {
 }
   
   /* Main content styles */
-  main {
+  /* main {
     padding: 20px;
-  }
+  } */
 
 
     .links {
@@ -144,6 +145,7 @@ body.dark-mode {
 
   .links li{
     margin-bottom: 10px;
+    display:flex;
   }
 
   .links a :hover{
@@ -256,148 +258,145 @@ section a:hover{
   }
   
 
-  /* For Tablets (max-width: 768px) */
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
 
-  #robot {
-    width: 50px; /* Slightly bigger robot */
-    height: 60px;
-  }
+/* Media Queries for Responsiveness */
 
-  .left {
-    width: 40%;
-    padding: 20px;
-    position: relative;
-  }
-
-  .right {
-    margin-left: 5%;
-    padding-top: 30px;
-  }
-
-  nav {
-    padding-top: 70px;
-  }
-
-  section .card {
-    flex-direction: column;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-
-  section .card_img {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .links {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    width: 90%;
-  }
-
-  footer {
-    margin-right: 5%;
-    text-align: center;
-  }
+/* For smaller devices (phones) */
+@media (max-width: 768px) {
+body{
+  background: rgb(145, 94, 94);
+  border-left: none;
 }
 
-/* For Mobile Devices (max-width: 480px) */
-@media only screen and (max-width: 480px) {
-  body {
-    font-size: 12px;
-  }
-
-  #robot {
-    width: 40px; /* Adjust size */
-    height: 50px;
-  }
-
-  .left {
-    width: 90%;
-    padding: 10px;
-    position: relative;
-  }
-
-  .right {
-    margin-left: 0;
-    padding-top: 20px;
-  }
-
-  nav {
-    padding-top: 50px;
-  }
-
-  section .card {
-    flex-direction: column;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-
-  section .card_img {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .links {
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    width: 100%;
-    text-align: center;
-  }
-
-  footer {
-    text-align: center;
-    font-size: 10px;
-  }
+#robot{
+  display: none;
 }
 
-/* For Very Small Mobile Screens (max-width: 320px) */
-@media only screen and (max-width: 320px) {
-  body {
-    font-size: 10px;
-  }
-
-  #robot {
-    width: 30px;
-    height: 40px;
-  }
-
-  .left {
-    width: 100%;
-    padding: 5px;
-  }
-
-  .right {
-    margin-left: 0;
-    padding-top: 10px;
-  }
-
-  nav {
-    padding-top: 40px;
-  }
-
-  section .card {
-    flex-direction: column;
-    padding: 5px;
-    margin-bottom: 5px;
-  }
-
-  section .card_img {
-    width: 100%;
-    margin-bottom: 5px;
-  }
-
-  footer {
-    font-size: 8px;
-  }
+header{
+  background-color: #2d362b;
+  border-bottom:3px solid rgb(107, 34, 34);
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 20px !important;
 }
 
- 
+.toggle{
+  margin-left: 70%;
+}
+.container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+border: 1px solid rgb(153, 132, 132);
+ width: 70px;
+  position:fixed;
+ top: 0;
+  left:40%;
+  height: 43px;
+}
+.links ul{
+display: flex;
+}
+.links li {
+  padding-right: 20px;
+  margin-right: 10px;
+}
+
+  .left {
+    display: grid;
+  text-align: center;
+    
+      width: 80%;
+      position: relative;
+      padding: 15px;
+        }
+
+        nav {
+          padding-top: 20px;
+                        display: grid;
+            }
+
+  .right {
+    display: grid;
+    text-align: center;
+      margin-left: auto;
+        width: 80%;
+        position: relative;
+        padding: 15px;
+        border: 1px solid rgb(63, 59, 59);
+  }
+
   
+  .card {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .card_img {
+      margin-right: 0;
+  }
+
+  .card_p {
+      margin-top: 10px;
+  }
+}
+
+/* For very small devices (phones in portrait mode) */
+@media (max-width: 480px) {
+  .left {
+      padding: 10px;
+      width: 100%;
+  }
+
+  .right {
+      width: 100%;
+      margin-left: 0;
+      padding-top: 10px;
+  }
+
+  .links {
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 20%;
+      left: 0;
+  }
+
+  .links li {
+      margin-bottom: 10px;
+  }
+
+  .card {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  footer {
+      text-align: center;
+      padding: 10px;
+  }
+}
+
+/* For larger devices (laptops/desktops) */
+@media (min-width: 1024px) {
+  .left {
+      width: 25%;
+  }
+
+  .right {
+      width: 60%;
+  }
+
+  .links {
+      position: fixed;
+      top: 50%;
+      left: 5%;
+      width: 15%;
+  }
+}
+
+
+
