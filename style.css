@@ -152,12 +152,9 @@ body.dark-mode {
  position: fixed;
  top: 10%;
 left: 7%;
-
 width: 20%;
-
   }
 
-  
   nav {
 padding-top: 90px;
         display: grid;
@@ -252,6 +249,7 @@ section a:hover{
      }
   
   footer a {
+    display: none;
     text-decoration: none;
   }
   
@@ -271,7 +269,7 @@ body{
 }
 
 header{
-  background-color: #2d362b;
+    background-color: #2d362b;
   border-bottom:3px solid rgb(107, 34, 34);
   width: 100%;
   margin-left: 0;
@@ -282,8 +280,23 @@ header{
 
 .toggle{
   margin-left: 80%;
-  border: 1px solid rgb(33, 187, 13);
+  border: 1px solid rgba(33, 187, 13, 0.61);
 }
+nav_header{
+  padding: 9px;
+  position: fixed;
+  left: 30%;
+  top: 0;
+  display: flex;
+}
+
+nav_header a{
+  text-decoration: none;
+  color:green;
+  border-right: 30px;
+}
+
+
 .container{
   display: grid;
   justify-content: center;
@@ -291,36 +304,45 @@ header{
 }
 
 .links {
-
- width: 28% !important;
-  position:fixed;
- top: 0;
-  left:190px;
-  height: 43px;
-  z-index: 3;
+  display: none;
 }
-.links ul{
+
+.links_footer{
+  
+    position: relative;
+  bottom: 0;
+  margin-left:50%
+}
+
+.links_footer ul{
 display: flex;
-margin-left: -40px ;
-
 }
-.links li {
+
+.links_footer li {
   padding-right: 20px;
   margin-right: 10px;
 }
 
   .left {
+    
     display: grid;
   text-align: center;
-    
-      width: 80%;
+          width: 80%;
       position: relative;
-      padding: 15px;
+      padding: 11px;
         }
 
         nav {
-          padding-top: 20px;
-                        display: grid;
+          display: none;
+          /* padding-top: 1px;         
+            }
+            nav a {
+              padding: 10px;
+              color: #eceeeb;
+              text-decoration: none;
+              margin: 0 10px;
+              font-size: 1.2rem;
+              transition: color 0.3s ease, background-color 0.3s ease; */
             }
 
   .right {
@@ -330,7 +352,7 @@ margin-left: -40px ;
         width: 80%;
         position: relative;
         padding: 15px;
-        border: 1px solid rgb(63, 59, 59);
+        /* border: 1px solid rgb(63, 59, 59); */
   }
 
   
@@ -346,6 +368,34 @@ margin-left: -40px ;
   .card_p {
       margin-top: 10px;
   }
+/* Footer styles */
+footer {
+ padding: 8px;
+ height:99px !important;
+  color: #7c6f6f;
+ width: 100%;
+ /* position: fixed; */
+ bottom: 0;
+ text-align: center;
+ background-color: #1b1d1b;
+   }
+
+
+footer div{
+  position: fixed;
+  bottom: 3px;
+right: 6px;
+}
+
+   footer a {
+    display:contents;
+        color: white;
+    
+  }
+
+
+
+
 }
 
 /* For very small devices (phones in portrait mode) */
