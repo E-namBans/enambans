@@ -1,15 +1,17 @@
 /* General styles */
+html{
+  margin: 0;
+  background: linear-gradient(-75deg, #b13a3a, #b14080, #b65d5d, #181610);
+  border-left: 10px solid rgba(15, 1, 1, 0.596);
+	background-size: 400% 400%;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-   border-left: 10px solid rgba(107, 41, 41, 0.596);
-    color: #44a826;
-       background: linear-gradient(-75deg, #b13a3a, #b14080, #633535, #2e2b20);
-       /* background: linear-gradient(-75deg, #030000, #1b1418, #000000, #27251d); */
-	background-size: 400% 400%;
-	
- 
-  }
+     color: #44a826;
+        }
+        
   #robot {
     z-index: 10;
     width: 30px; /* Smaller width */
@@ -105,15 +107,15 @@ body {
   display: inline-block;
   cursor: pointer;
   font-size: 1.5rem;
- 
+ border: 1px solid;
  margin-left: 95%;
   border-radius: 50%;
   transition: border-color 0.5s ease;
 }
 
 .toggle:hover {
-  /* background-color: white; */
-  border-bottom: 2px solid rgb(146, 51, 51);
+  background-color: white;
+  border: 4px solid rgb(2, 2, 2);
 }
 
 body.dark-mode {
@@ -161,19 +163,30 @@ header .menu_container {
  position: fixed;
  top: 10%;
 left: 4%;
-width: 30%;
   }
 
   .left h1{
     font-weight: bolder;
     font-size: 3rem;
+   width: 200px;
+   
   }
 
   .left .spec{
     color: white;
     margin-top: -33px;
     font-weight: bolder;
+    width: 300px;
+   
   }
+
+
+.left .intro{
+  color: rgb(49, 189, 21);
+  width: 300px;
+ font-weight: bolder;
+}
+
 
   nav {
    
@@ -182,8 +195,9 @@ padding-top: 40px;
   }
   
   nav a {
+    font-weight: bolder;
     padding: 10px;
-    color: #eceeeb;
+    color: #f7fcf5;
     text-decoration: none;
     margin: 0 10px;
     font-size: 1.5rem;
@@ -197,8 +211,13 @@ padding-top: 40px;
   }
 
   .right{
-    padding-top: 7%;
-    margin-left: 40%;
+    padding-top: 1%;
+    margin-left: 39%;
+  }
+
+  .right h2{
+color: rgb(221, 210, 210);
+font-weight: bolder;
   }
   
    section .card{
@@ -277,8 +296,7 @@ footer  div{
 @media (max-width: 768px) {
 body{
    border-left: none;
-   background-color: #26868a !important;
-   }
+      }
 
 #robot{
   display: none;
@@ -304,39 +322,39 @@ header .menu_container{
 }
 
 .menu_button {
-  font-size: 20px; /* Adjust size of the Unicode menu icon */
-  background-color: #290a0a;
-  color: white;
-  border: 1px solid rgb(48, 10, 7);
+  font-size: 1.5rem; /* Adjust size of the Unicode menu icon */
+  background-color: #290a0a00;
+  color: rgb(12, 68, 10);
+  border: 1px solid green(48, 10, 7);
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 50%;
   position: fixed;
   top: 53px;
-  right: 10px;
+  right: 9px;
   z-index: 100;
  
  
 }
 
 .menu_button:hover {
-  background-color: #31280a;
+  background-color: #f0ede6;
 }
 
 .menu {
   display:none;
   flex-direction: column;
- height: 80px;
- width: 80px;
+ height: 100px;
+ width: 90px;
   position: fixed;
   top: 50px;
   right: -66px;
-  background-color: #1a0909e8;
-  padding: 9%;
+  background-color: #1a090931;
+  padding: 10%;
   border-radius: 50%;
   /* box-shadow: 0px 4px 6px rgba(153, 46, 46, 0.2); */
   z-index: 1;
-  text-align: left;
+  text-align:start;
 }
 
 .menu li{
@@ -366,23 +384,39 @@ header .menu_container{
 }
 
   .left {
-    
-    display: grid;
+        display: grid;
   text-align: center;
           width: 80%;
       position: relative;
       padding: 11px;
         }
+        .left .intro{
+        color: rgb(196, 186, 186);
+        width: 360px;
+        margin-left: 11%;
+        }
+
+.left .spec{
+  margin-left: 15%;
+}
+
 
         nav {
           display: none;
         
             }
-          
+            .left h1{
+              width: 100%;
+              margin-left: auto;
+            }
+
+           
+            
+            
 
   .right {
     display: grid;
-    text-align: center;
+    text-align:justify;
       margin-left: auto;
         width: 80%;
         position: relative;
@@ -390,7 +424,13 @@ header .menu_container{
         
   }
 
-  
+section h2{
+  color: #8b9189;
+  margin-left: -20%;
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+
   .card {
       width: 100%;
       flex-direction: column;
