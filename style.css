@@ -129,13 +129,15 @@ header .menu_container {
  
     .links {
            position: fixed;
-           top: 50%; 
-          width: 70px !important;
-           margin-left: -55px;
+           top: 40%; 
+          width: 90px !important;
+           margin-left: -33px;
+           
   }
 
   .links a{
         color: #f7f7f7;
+        font-size: 1.5rem;
   }
 
   .links li{
@@ -155,15 +157,27 @@ header .menu_container {
 
 
   .left{
-  padding: 30px;
+  padding: 20px;
  position: fixed;
  top: 10%;
-left: 7%;
-width: 20%;
+left: 4%;
+width: 30%;
+  }
+
+  .left h1{
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+
+  .left .spec{
+    color: white;
+    margin-top: -33px;
+    font-weight: bolder;
   }
 
   nav {
-padding-top: 90px;
+   
+padding-top: 40px;
         display: grid;
   }
   
@@ -172,7 +186,7 @@ padding-top: 90px;
     color: #eceeeb;
     text-decoration: none;
     margin: 0 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     transition: color 0.3s ease, background-color 0.3s ease;
   }
 
