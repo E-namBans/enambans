@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LINKS</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,8 +29,6 @@
 
 
 <body>
-
-
     <div id="robot">
         <div class="face">
           <div class="eye" id="eye-left"></div>
@@ -44,13 +44,25 @@
     <header>
         <div id="darkModeToggle" class="toggle">
             <span id="icon">🌙</span>
+</div>
 
-            <nav_header>
-                <a href="#about_me">About</a>
-                <a href="#right">Projects</a>
-               
-                <a href="#blog">Personal </a>
-            </nav>
+<div class="menu_container">
+    <button class="menu_button" onclick="toggleMenu()">☰</button>
+<nav_header class="menu" id="menu">
+    <li>
+        <a href="#about_me">About</a>
+    </li>
+    <li>
+        <a href="#right">Projects</a>
+    </li>
+    <li>
+        <a href="#blog">Personal </a>
+    </li>   
+                   
+                </nav_header>
+</div>
+
+           
        
     </header>
 
@@ -89,7 +101,6 @@
 <nav>
     <a href="#about_me">About</a>
     <a href="#right">Projects</a>
-   
     <a href="#blog">Personal Blog</a>
 </nav>
 
@@ -180,6 +191,7 @@
             <div class="card finale">
                 <h3>Blog Post 3</h3>
                 <p>A brief snippet of your blog post.</p>
+                
                 <a href="#">Read More</a>
             </div>
         </div>
@@ -194,8 +206,16 @@
     <footer>
         <p>&copy; 2025 My Portfolio | Built with HTML, CSS, and JavaScript</p>
 
+        <div class="move_up">
+            <a href="#"><span class="arrow-icon">↑</span>
+
+            </a>
+        </div>
+
         <div class="links_footer ">
-            <ul>
+           <ul>
+
+          
                 <li>
                     <a href="https://www.linkedin.com/in/mawuenam-bansah-5a6806297/">
                         
@@ -210,13 +230,12 @@
                     <a href="https://twitter.com/EnamJackxon">
                          <i class="fa-brands fa-twitter"></i>
                     </a>
-                </li>                   
-            </ul>
+                </li>  
+            </ul>                 
+           
         </div>
 
-        <div>
-            <a href="#">Back to top</a>
-        </div>
+     
       
     </footer>
 

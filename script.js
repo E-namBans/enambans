@@ -1,3 +1,7 @@
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+}
 
 
 
@@ -70,3 +74,11 @@ robot.addEventListener('click', () => {
 
 // Start moving the robot
 moveRobot();
+
+
+
+
+
+
+
+
