@@ -1,16 +1,28 @@
 /* General styles */
 html{
   margin: 0;
-  background: linear-gradient(-75deg, #b13a3a, #b14080, #b65d5d, #181610);
- 
-	background-size: 400% 400%;
+  font-family: "Open Sans";
+  font-optical-sizing: auto;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* SCROLL BAR MODIFICATION */
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color:   rgb(231, 179, 7)   ;
+}
+::-webkit-scrollbar-track{
+  background-color: #000000;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-     color: #44a826;
-     border-left: 10px solid rgba(15, 1, 1, 0.596);
+    font-family: "Open Sans";
+    font-optical-sizing: auto;
+         border-left: 3px solid rgb(231, 179, 7);
         }
         
   #robot {
@@ -69,16 +81,16 @@ body {
   .legs {
     display: flex;
     justify-content: space-between;
-    width: 12px; /* Adjusted width for legs */
+    width: 12px;
     position: absolute;
     bottom: -5px;
   }
   
   .leg {
-    width: 5px; /* Circular legs */
+    width: 5px; 
     height: 5px;
     background-color: rgba(114, 145, 44, 0.5);
-    border-radius: 50%; /* Make legs round */
+    border-radius: 50%; 
     animation: leg-motion 0.5s infinite;
   }
   
@@ -90,17 +102,18 @@ body {
       transform: translateY(2px);
     }
   }
-
+/*  xxxxx ROBOT END XXXXX */
 
   /* Header styles */
   header {
     padding:1px;
     text-align: center;
     position: fixed;
-    width: 90%;
+    width: 95%;
     height: 43px;
     top: 0;
     margin-left: 5%;
+  
   }
   
  /* DARK MODE */
@@ -110,7 +123,7 @@ body {
   cursor: pointer;
   font-size: 1.5rem;
  border: 1px solid;
- margin-left: 95%;
+ margin-left: 93%;
   border-radius: 50%;
   transition: border-color 0.5s ease;
 }
@@ -120,86 +133,227 @@ body {
   border: 4px solid rgb(2, 2, 2);
 }
 
-body.dark-mode {
- background: rgb(2, 1, 1);
- color: white;
+/* DARK MODE DISPLAY USING THE ICON POWERED BY JS*/
+.toggle.dark-mode{
+  border: 1px solid white;
 }
+
+.toggle:hover.dark-mode{
+  background-color: black;
+  border: 4px solid white;
+}
+
+.left.dark-mode {
+  background-color: rgb(24, 21, 21);
+  
+ }
+.right.dark-mode {
+  background-color:black;
+   color: white; 
+  }
+
+  .right.dark-mode h2 {
+    color: orange ;
+  }
+  .animation.dark-mode span::after {
+    background-color: rgb(24, 21, 21);
+  }
+
+footer.dark-mode{
+  background: black;
+}
+/*XXXXX DARK_MODE DISPLAY USING THE ICON END XXXXX */
+
 
 header .menu_container {
   display: none;
 }
 
-  
- 
     .links {
            position: fixed;
            top: 40%; 
           width: 90px !important;
            margin-left: -33px;
-           
+           z-index: 1000;
+          
   }
 
   .links a{
-        color: #f7f7f7;
-        font-size: 1.5rem;
+        color: #f0ebeb;
+        font-size: 1.1rem;
+                 padding-right: 3px;
+             
   }
 
   .links li{
     list-style:none;
     margin-bottom: 10px;
     display:flex;
-    width: 4px;
+    width: 1.4vw;
+    transition: transform 0.7s ease, font-size 0.7s ease;
+    padding-right: 17.9px;
+        padding-left: 3px;
   }
 
   .links ul{
-    width: 9px;
+    width: 3vw;
+   
   }
 
-  .links a :hover{
-    color: rgb(146, 51, 51);
+  .links li :hover{   
+    transform: translateX(3px);  
+     font-size: 1.5rem;
+  }
+
+/* LEFT SIDE */
+  .left{
+ position: fixed;
+width: 37%;
+background: black;
+height: 100vh;
+align-items: center;
+align-content: center;
+overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
+.left::-webkit-scrollbar{
+  display: none;
+}
 
-  .left{
-  padding: 20px;
- position: fixed;
- top: 10%;
-left: 4%;
+  
+.color_sep{
+  margin-left: 20%;
   }
 
   .left h1{
-    font-weight: bolder;
+       font-weight: bolder;
     font-size: 3rem;
-   width: 200px;
+   width: 25vw;
+   color: white;
+    line-height: 41px;
+  letter-spacing: 5px;
    
   }
 
-  .left .spec{
-    color: white;
-    margin-top: -33px;
-    font-weight: bolder;
-    width: 300px;
-   
+  .color_sep_back{
+    margin-top: -9px !important;
+      border-top:1px solid yellow ;
+    border-top-style: dashed;
+    border-bottom: 1px solid yellow;
+    border-bottom-style: dashed;
+width: 75%;
+padding-top: 13PX;
+padding-left: 5px;
   }
 
-
-.left .intro{
-  color: rgb(49, 189, 21);
-  width: 300px;
- font-weight: bolder;
+  
+ 
+  /* ANNIMATION DESIGN FOR CLASS = ANIMATION */
+  .animation{
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 21vw !important;
+ margin-top: -9px;
 }
 
+.animation span{
+    position: relative;
+}
+
+.animation span::before{
+    content: "Frontend Developer";
+    color: rgb(231, 179, 7);
+    animation: words 20s infinite;
+}
+.animation span::after{
+content: "";
+background-color: black;
+position: absolute;
+width: calc(100% + 8px);
+height: 100%;
+border-left: 3px solid rgba(99, 97, 90, 0);
+right: -10px;
+animation: cursor 0.6s infinite, typing 20s steps(30) infinite
+}
+@keyframes cursor{
+    to{
+        border-left: 4px solid rgb(231, 179, 7);
+    }
+}
+@keyframes words{
+    0%,
+    20%{
+        content: "FRONT-END";
+    }
+    21%,40%{
+        content: "PYTHON";
+    }
+    41%,60%{
+        content: "UI/UX DESIGN";
+    }
+    61%,80%{
+        content: "FLUTTER DEV";
+    }
+    81%,100%{
+    content: "SOFTWARE TEST";
+    }
+}
+
+@keyframes typing{
+    10%,
+    15%,
+    20%,
+    35%,
+    40%,
+    45%,
+    50%,
+    55%,
+    60%,
+    65%,
+    70%,
+    75%,
+    80%,
+    85%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+width: calc(100% + 9px);
+    }
+}
+
+.left .intro{
+ color: white;
+  font-family: sans-serif;
+  font-weight: 200;
+  line-height: 30px; 
+ height: fit-content;
+  width: 22vw;
+  margin-left: -8 !important;
+ 
+}
 
   nav {
-   
-padding-top: 40px;
+   margin-left: 20%;
+padding-top: 20px;
         display: grid;
+        padding-bottom: 25px;
   }
   
   nav a {
     font-weight: bolder;
-    padding: 10px;
-    color: #f7fcf5;
+    padding: 6px;
+    color: white;
     text-decoration: none;
     margin: 0 10px;
     font-size: 1.5rem;
@@ -208,56 +362,85 @@ padding-top: 40px;
 
   
   nav a:hover {
-   text-decoration: underline;
-    color: rgb(146, 51, 51);
+  
+    color: rgb(231, 179, 7);
   }
 
+/* RIGHT SIDE */
   .right{
+    border:1px solid rgba(255, 255, 255, 0);
+    padding-left: 7%;
     padding-top: 1%;
-    margin-left: 39%;
+    margin-left: 36vw;
+    background:white;
+    
   }
 
   .right h2{
-color: rgb(221, 210, 210);
+    font-size: 1.5rem;
+    color:black;
 font-weight: bolder;
+text-transform: uppercase;
+  }
+
+  section .skills_and_tools{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    padding: 16px;
   }
   
    section .card{
     display: flex;
     justify-content: space-between;
     width: 80%;
-    background-color: #1b1d1b;
-    border: 1px solid rgb(94, 75, 75);
-    padding: 20PX;
+     background-color: rgb(24, 21, 21);
+        padding: 20PX;
     margin-bottom: 50px;
+    transition: transform 0.3s ease, font-size 0.7s ease;
+ 
   }
+
+  section .card:hover{
+    transform: translatex(3px);   
+     }
+
+     #skills_and_tools .card_img{ 
+      transition: transform 0.3s ease, font-size 0.7s ease;
+     }
+     #skills_and_tools .card_img:hover{ 
+      transform: translatex(3px);   
+     }
+
+
+
  section .card_img{
   margin-right: 40px;
-  
- }
+   }
 
  section .card_p{
 margin-top: -20px;
+color: white;
  }
  section .card_p h3{
-  color: white;
+  color: rgb(231, 179, 7);
    }
-
  section a{
   text-decoration: none;
-  color: #f8faf8;
-  background-color: rgba(255, 255, 255, 0);
-border-radius: 45px;
+  color: #111102;
+  background-color:rgb(231, 179, 7);
+/* border-radius: 45px; */
 padding: 5px;
+width: 30px;
+height: 30px;
+/* border: 1px solid rgb(128, 124, 114); */
 }
 section a:hover{
-  color: rgb(146, 51, 51);
-}
+    background-color: white;
+  }
   .right #about_me{
       width: 80%;
   }
-  
-  
   
   section {
     margin-bottom: 40px;
@@ -266,11 +449,20 @@ section a:hover{
   section h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #333;
+    color: rgb(231, 179, 7);
+  }
+
+  .section .blog .card h3{
+    color:rgb(231, 179, 7);
+  }
+
+  .section .blog .card p{
+    color: white;
+   
   }
   
   .section-content {
-    background-color: #fff;
+    background-color:white;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -282,140 +474,163 @@ section a:hover{
   
   /* Footer styles */
   footer {
-    margin-right: 9%;
-    color: #7c6f6f;
+    border:1px solid rgba(255, 255, 255, 0);
+        background:white;
+    color: #745e5e;
     text-align: right;
-         }
+    padding-right: 9%;
+               }
   
 footer  div{
   display: none;
 }
+
+/* 
+ ############   
+ #              
+ #
+ #
+ #
+ ############
+ #
+ #
+ #
+ #
+ ############
+ */
+
+
  
-
 /* Media Queries for Responsiveness */
-
 /* For smaller devices (phones) */
 @media (max-width: 768px) {
-
-
 body{
-
    border-left: none;
-      }
+         }
 
 #robot{
   display: none;
 }
-
+/* HEADER FOR MY NAVIGATION */
 header{
-    background-color: #2d362b;
-  border-bottom:3px solid rgb(107, 34, 34);
+    /* background-color: #020202; */
+  /* border-bottom:3px solid rgba(241, 187, 9, 0.788); */
   width: 100%;
   margin-left: 0;
-  margin-bottom: 20px !important;
-  z-index: 2;
+   z-index: 2;
   align-content: center;
+  height: 80px;
+ 
 }
 
 .toggle{
-  margin-left: 80%;
-  border: 1px solid rgba(33, 187, 13, 0.61);
-}
-header .menu_container{
-  position: relative;
-      display: flex;   
-}
+  margin-top: 2%;
+  margin-left: 86%;
+  border: 1px solid black;
 
-.menu_button {
-  font-size: 1.5rem; /* Adjust size of the Unicode menu icon */
-  background-color: #290a0a00;
-  color: rgb(12, 68, 10);
-  border: 1px solid green(48, 10, 7);
-  padding: 5px 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  position: fixed;
-  top: 53px;
-  right: 9px;
-  z-index: 100;
- 
- 
+ }
+
+.toggle:hover{
+  border: 4px solid black;
+
 }
 
-.menu_button:hover {
-  background-color: #f0ede6;
+/* DARK_MODE DISPLAY */
+
+  .intro.dark-mode {
+    color: white ;
+  }
+
+  .left.dark-mode h1 {
+    color: white ;
+   
+  }
+
+  .left.dark-mode p {   
+    color: white;
+  }
+
+  .left.dark-mode {
+    background-color:black;
+    color: white ;
+  }
+  body.dark-mode {
+    background-color: black;  
+  }
+
+/* DARK_MODE DISPLAY END */
+
+
+/* work on this later */
+header .menu_container {
+  display: none;
 }
 
-.menu {
-  display:none;
-  flex-direction: column;
- height: 100px;
- width: 90px;
-  position: fixed;
-  top: 50px;
-  right: -66px;
-  background-color: #1a090931;
-  padding: 10%;
-  border-radius: 50%;
-  /* box-shadow: 0px 4px 6px rgba(153, 46, 46, 0.2); */
-  z-index: 1;
-  text-align:start;
-}
-
-.menu li{
-  list-style: none;
-  margin-bottom: 40px !important;
-}
-
-.menu a {
-  text-decoration: none;
-  color: rgb(243, 238, 238); 
-}
-
-.menu a:hover {
-  background-color: #9e3535;
-  border-radius: 5px;
-}
-
-
+/* CONTAINER FOR LEFT AND RIGHT */
 .container{
+  position:relative;
   display: grid;
   justify-content: center;
   align-items: center;
+ 
+ margin-top: 88px;
+ width: 100vw;
 }
 
 .links {
   display: none;
 }
 
-  .left {
-        display: grid;
-  text-align: center;
-          width: 80%;
-      position: relative;
-      padding: 11px;
-        }
-        .left .intro{
-        color: rgb(196, 186, 186);
-        width: 360px;
-        margin-left: 11%;
-        }
 
-.left .spec{
-  margin-left: 15%;
+/* LEFT VIEW NOW TOP VIEW */
+  .left {      
+   display: grid;
+  text-align: center;
+   background: white;
+    position: relative;
+    height:30vh;
+     width: 100%;
+       }
+
+     .color_sep{
+      margin-left: 4vw;
+               width: 90%;
+               padding-bottom: 10px;
+                }
+
+.left h1{
+  color:black;
+  font-weight:bolder;
+  font-size: 4.0rem;
+  
+ 
+ }
+ .color_sep_back{
+  border-top:none !important; 
+  border-bottom: none;
+  width: 100%;
+  border-top-style: dashed;
+ }
+    
+ .left .intro{
+  color:black ;
+     font-weight: bolder;
+  width: 65vw !important;
+    margin-top: -20px;    
+    margin-left: 11%;
 }
 
-
-        nav {
-          display: none;
-        
-            }
-            .left h1{
+ nav {
+    display: none;
+     }
+ .left h1{
               width: 100%;
               margin-left: auto;
             }
 
-           
+           .animation{
+            display: none;
+           }
             
             
 
@@ -431,9 +646,16 @@ header .menu_container{
 
 section h2{
   color: #8b9189;
-  margin-left: -20%;
   font-size: 1.9rem;
   font-weight: bolder;
+}
+
+section .skills_and_tools{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(69px, 2fr));
+  gap: 16px;
+  padding: 16px;
+   margin-right: 20%;
 }
 
   .card {
@@ -466,7 +688,7 @@ footer  div{
 
 footer .links_footer{ 
 display: flex;
-margin-left: 40%;
+margin-left: 30%;
 width: 150px;
 margin-top: -20px;
 }
@@ -478,30 +700,54 @@ margin-top: -20px;
 .links_footer li{
  list-style: none;
   padding-right: 10px;
- }
-
- .links_footer ul li a{
-  color: white;
+  transition: transform 0.3s ease, font-size 0.7s ease;
  }
 
  
+ .links_footer ul li:hover{
+  color:rgba(241, 187, 9, 0.788);
+  transform: translatey(-4px);  
+ 
+ }
+ 
+ 
 footer .move_up a{
-  color: white ;
+  color: rgb(231, 179, 7) ;
 text-decoration: none;
 position: fixed;
 bottom: 30px;
-border: 1px solid rgba(18, 196, 57, 0.534);
-border-radius: 50%;
 width: 30px;
 height: 30px;
 margin-left: 38%;
 }
+footer .move_up a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid black;
+  border-radius: 50%; 
+  box-sizing: border-box; 
+  animation: rotate-border 2s linear infinite;
+  z-index: -1;
+}
+
 .arrow-icon {
-  color: rgb(253, 253, 253); /* Sets the color to white */
-  font-size: 20px; /* Adjust size as needed */
+  color: rgb(226, 151, 10);
+  font-size: 20px; 
   font-weight: bold;
   display: inline-block;
-
+}
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* For very small devices (phones in portrait mode) */
@@ -539,3 +785,18 @@ margin-left: 38%;
 
 
 }
+
+
+/* 
+ ############   #
+ #              #
+ #
+ #
+ #
+ ############
+ #
+ #
+ #
+ #
+ # ##########
+ */
