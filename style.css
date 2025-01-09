@@ -117,7 +117,7 @@ body {
     top: 0;
     left: 0;
     right:0;  
-   
+  
   }
   
  /* DARK MODE */
@@ -132,9 +132,6 @@ body {
   border-radius: 50%;
   transition: border-color 0.5s ease;
   }
-
-
-
 
 .toggle:hover {
   background-color: white;
@@ -170,6 +167,13 @@ body {
 footer.dark-mode{
   background: black;
 }
+
+header.dark-mode{
+  background-color: black;
+}
+
+
+
 /*XXXXX DARK_MODE DISPLAY USING THE ICON END XXXXX */
 
 
@@ -384,6 +388,7 @@ padding-top: 20px;
        padding-left: 7%;    
     margin-left: 36vw;
     background:white;     
+    padding-bottom: 30px;
   }
 
   .right h2{
@@ -508,21 +513,17 @@ section a:hover{
 
  
   /* Footer styles */
-  footer {
- 
+  footer { 
         background:white;
     color: #745e5e;
-    text-align: center;
-  
-    width: 90%;   
+    text-align: center;   
+    border: 1px solid rgba(255, 255, 255, 0) ;
   
   
   }
 
   footer p{
-
 margin-left: 36vw;
-
   }
   
 footer  div{
