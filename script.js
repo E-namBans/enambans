@@ -1,46 +1,54 @@
-function toggleMenu() {
-  const menu = document.getElementById('menu');
-  menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-}
-
-
-
-
-
-
-
+// DARK MODE ICON TOGGLE//
 const toggle = document.getElementById('darkModeToggle');
 const icon = document.getElementById('icon');
+const leftElement = document.querySelector('.left'); 
+const rightElement = document.querySelector('.right');
+const heading = document.getElementById('heading');
+const toggleCircle = document.querySelector('.toggle');
+const toggleCircleHover = document.querySelector('.toggle:hover');
+const animationElement = document.querySelector('.animation');
+const footerDark = document.getElementById('footer');
+const heading1 = document.getElementById('heading1');
+const paragraph1 = document.getElementById('paragraph1');
+
+
+
+
 
 toggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
+  leftElement.classList.toggle('dark-mode');
+  rightElement.classList.toggle('dark-mode');
+  heading.classList.toggle('dark-mode');
+  toggleCircle.classList.toggle('dark-mode');
+  animationElement.classList.toggle('dark-mode');
+ footerDark.classList.toggle('dark-mode')
+ heading1.classList.toggle('dark-mode');
+ paragraph1.classList.toggle('dark-mode');
 
-  // Switch icon
+
   if (document.body.classList.contains('dark-mode')) {
-    icon.textContent = '☀️'; // Sun icon for light mode
+    icon.textContent = '☀️';
   } else {
-    icon.textContent = '🌙'; // Moon icon for dark mode
+    icon.textContent = '🌙';
   }
 });
 
 
-
-
+// MY AI ROBOT //
 const robot = document.getElementById('robot');
 const mouth = document.querySelector('.mouth');
 
 // Initial position and very slow speed
 let posX = Math.random() * window.innerWidth;
 let posY = Math.random() * window.innerHeight;
-let speedX = (Math.random() - 0.5) * 0.2; // Even slower horizontal speed
-let speedY = (Math.random() - 0.5) * 0.2; // Even slower vertical speed
+let speedX = (Math.random() - 0.5) * 0.2; // 
+let speedY = (Math.random() - 0.5) * 0.2; // 
 
 // Function to move the robot
 function moveRobot() {
-  // Update position
-  posX += speedX;
+   posX += speedX;
   posY += speedY;
-
   // Collision detection
   if (posX <= 0 || posX >= window.innerWidth - 30) { // Adjusted for smaller size
     speedX *= -1; // Reverse horizontal direction
@@ -48,11 +56,9 @@ function moveRobot() {
   if (posY <= 0 || posY >= window.innerHeight - 35) { // Adjusted for smaller size
     speedY *= -1; // Reverse vertical direction
   }
-
   // Apply position
   robot.style.left = `${posX}px`;
   robot.style.top = `${posY}px`;
-
   // Continue animation
   requestAnimationFrame(moveRobot);
 }
