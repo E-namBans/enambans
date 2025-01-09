@@ -10,7 +10,7 @@ const animationElement = document.querySelector('.animation');
 const footerDark = document.getElementById('footer');
 const heading1 = document.getElementById('heading1');
 const paragraph1 = document.getElementById('paragraph1');
-
+const header = document.querySelector('header');
 
 
 
@@ -25,7 +25,7 @@ toggle.addEventListener('click', () => {
  footerDark.classList.toggle('dark-mode')
  heading1.classList.toggle('dark-mode');
  paragraph1.classList.toggle('dark-mode');
-
+header.classList.toggle('dark-mode');
 
   if (document.body.classList.contains('dark-mode')) {
     icon.textContent = '☀️';
