@@ -36,7 +36,7 @@ You can view this portfolio on your browser by simply opening the `index.html` f
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/E-namBans/portfolio.git
 
 # Open the index.html file in your browser
 open index.html
