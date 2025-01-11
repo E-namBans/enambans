@@ -185,8 +185,8 @@ header .menu_container {
            position: fixed;
            top: 40%; 
           width: 90px !important;
-           margin-left: -33px;
-          
+           margin-left: -23px;
+           z-index: 60000;
   }
 
   .links a{
