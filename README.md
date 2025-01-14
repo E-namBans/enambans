@@ -20,8 +20,6 @@ When I'm not coding, I love exploring new destinations and finding inspiration i
 - **HTML**: Structuring the content of the website.
 - **CSS**: Styling the website, including flexbox, grid layout, and media queries for responsiveness.
 - **JavaScript**: Adding interactive elements such as dark mode toggle.
-- **Python**: Future backend development (not yet implemented in this portfolio).
-- **Flutter**: For building mobile applications (learning in progress).
 
 ## Features to Explore
 
@@ -29,6 +27,10 @@ When I'm not coding, I love exploring new destinations and finding inspiration i
 - **Blog**: View the latest blog posts where I share tips and insights on web development and technology.
 - **Dark Mode**: Toggle dark mode for a more comfortable reading experience.
 - **Social Links**: You can connect with me via LinkedIn, GitHub, and Twitter.
+
+## Future Features to Explore
+
+- [ ] Adding **UI/UX Components Hub** feature: Explore central collections of user interface and experince elements, appealing to bot design an functionality aspect
 
 ## How to Run
 
