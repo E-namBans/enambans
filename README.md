@@ -30,7 +30,7 @@ When I'm not coding, I love exploring new destinations and finding inspiration i
 
 ## Future Features to Explore
 
-- [ ] Adding **UI/UX Components Hub** feature: Explore central collections of user interface and experince elements, appealing to bot design an functionality aspect
+- [ ] Adding **UI/UX COMPONENT HUB** feature: Explore central collections of user interface and experince elements, appealing to both design an functionality aspect
 
 ## How to Run
 
