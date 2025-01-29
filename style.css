@@ -6,6 +6,7 @@ html{
   box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
+ 
   
 }
 
@@ -26,8 +27,7 @@ body {
   box-sizing: border-box;
     font-family: "Open Sans";
     font-optical-sizing: auto;
-    
-        }
+           }
         
   #robot {
     z-index: 10;
@@ -127,11 +127,31 @@ body {
   position: fixed;
   cursor: pointer;
   font-size: 1.5rem;
- border: 1px solid;
+  border: 1px solid;
  right: 3%;
   border-radius: 50%;
   transition: border-color 0.5s ease;
+  z-index:30000;
   }
+  .toggle .move_up a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid;
+    border-radius: 50%; 
+    box-sizing: border-box; 
+       z-index: -1;
+       width: 33px;
+height: 33px;
+  }
+
+
+
+
+
 
 .toggle:hover {
   background-color: white;
@@ -263,7 +283,7 @@ padding-left: 5px;
 
   
  
-  /* ANNIMATION DESIGN FOR CLASS = ANIMATION */
+  /* ANIMATION DESIGN FOR CLASS = ANIMATION */
   .animation{
     font-size: 1.5rem;
     font-weight: 600;
@@ -418,9 +438,9 @@ section{
   section .skills_and_tools{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-    gap: 100px;
-   
-  }
+    gap:31px;
+     }
+
 
 
   .skills_and_tools.card_img{
@@ -432,7 +452,9 @@ border: 1px solid rgb(136, 118, 118);
     display: flex;
     justify-content: space-between;
     width: 80%;
-     background-color: rgb(24, 21, 21);
+    background-image: url(/Asset/wallpaper.png);
+     background-color: rgb(46, 43, 43);
+     background-blend-mode:soft-light;
         padding: 20PX;
     margin-bottom: 50px;
     transition: transform 0.3s ease, font-size 0.7s ease;
@@ -440,7 +462,7 @@ border: 1px solid rgb(136, 118, 118);
   }
 
   section .card:hover{
-    transform: translatex(3px);   
+    transform: translatex(26px);   
      }
 
      #skills_and_tools .card_img{ 
@@ -468,13 +490,16 @@ color: white;
   color: #111102;
   background-color:rgb(231, 179, 7);
 /* border-radius: 45px; */
-padding: 5px;
+padding: 6px;
+margin-right: 8px;
 width: 30px;
 height: 30px;
+border-radius: 2px;
 /* border: 1px solid rgb(128, 124, 114); */
 }
 section a:hover{
     background-color: white;
+   
   }
   .right #about_me{
       width: 80%;
@@ -545,28 +570,14 @@ footer  div{
 
 /* For smaller devices (phones) */
 
-
-
 @media (max-width: 980px) {
   section .skills_and_tools{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(39px, 1fr));
-    gap: 111px;
-    padding-right: 12%;
-  
-  
+    gap: 108px;
+    padding-right: 19%;   
   }
-  
-  
-
-
-
-           }
-
-
-
-
-
+       }
 
 /* ##############################################
 /* FOR TABLET DEVICES */
@@ -582,9 +593,10 @@ body{
 /* HEADER FOR MY NAVIGATION */
 header{
   margin-left: 0;
-   z-index: 2;
+   z-index: 2000;
   align-content: center;
   height: 80px;
+
  }
 
 .toggle{
@@ -637,9 +649,6 @@ header .menu_container {
   align-items: center;
  width: 100%;
  margin-top: 88px;
-
-
-
 }
 
 .links {
@@ -701,8 +710,7 @@ padding-top: 30px;
            .animation{
             display: none;
            }
-            
-            
+                       
 
   .right {
     display: grid;
@@ -711,10 +719,7 @@ padding-top: 30px;
         width: 100%;
         position: relative;
       
-        
-  }
-
-
+          }
 
 section h2{
   color: #8b9189;
@@ -727,8 +732,6 @@ section .skills_and_tools{
   grid-template-columns: repeat(auto-fit, minmax(39px, 1fr));
   gap: 111px;
   padding-right: 12%;
-
-
 }
 
   .card {
@@ -793,10 +796,10 @@ footer .move_up a{
   text-decoration: none;
 position: fixed;
 bottom: 19px;
-width: 30px;
-height: 30px;
+width: 33px;
+height: 33px;
 right:19px;
-
+z-index: 1000;
 }
 footer .move_up a::before {
   content: '';
@@ -854,8 +857,7 @@ footer .move_up a::before {
 
 /* #################################### */
                 @media (max-width:450px){
- 
-               
+                
                   
                   /* DARK_MODE DISPLAY */
                   .intro.dark-mode {
@@ -888,12 +890,12 @@ footer .move_up a::before {
                      overflow-x: hidden;   
 overflow-y: hidden;
                         }
-                               .left h1      {                   margin-top: 1px;               font-size: 12.5vw;
+  .left h1      {  
+      margin-top: 1px;              
+       font-size: 12.5vw;
 margin-top: -100px ;
                 margin-left: -9px;                                                letter-spacing: 0;
-                              }
-
-
+                             
                             }
 
 
@@ -931,4 +933,6 @@ margin-top: -100px ;
  #
  #
  # ##########
+ 
  */
+                          }
