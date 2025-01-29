@@ -452,7 +452,7 @@ border: 1px solid rgb(136, 118, 118);
     display: flex;
     justify-content: space-between;
     width: 80%;
-    background-image: url(/Asset/wallpaper.png);
+    background-image: url(Asset/wallpaper.png);
      background-color: rgb(46, 43, 43);
      background-blend-mode:soft-light;
         padding: 20PX;
