@@ -5,9 +5,7 @@ html{
   font-optical-sizing: auto;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-x: hidden;
- 
-  
+  overflow-x: hidden;  
 }
 
 /* SCROLL BAR MODIFICATION */
@@ -109,7 +107,6 @@ body {
 /*  xxxxx ROBOT END XXXXX */
 
   /* Header styles */
-
   header {
        text-align: center;
     position:fixed;
@@ -119,7 +116,74 @@ body {
     right:0;  
   z-index: 0;
    }
-  
+/* ########## LOGO DESIGN ############## */
+.logo_wrapper{
+  position: fixed;
+  top: 8px;
+  left: 0;
+      
+     width: 112px;
+            height: 50px; 
+  }
+  .line{
+    margin: auto;
+    border-radius: 50px;
+    /* width: 51px;
+    height: 12px; */
+       background-color: orange;
+}
+
+.line:nth-child(1){
+  position: relative; 
+ rotate: 5deg;
+margin-bottom: 5px;
+width: 30px;
+height: 14px;
+}
+
+.line:nth-child(2){   
+rotate: -4deg;
+height: 14px;
+width: 37px;
+}
+
+.line:nth-child(3){ 
+  position: relative;
+  top: 3px; 
+  right:-1px; 
+rotate: -230deg;
+height: 14px;
+width: 56px;
+}
+
+.line:nth-child(4){
+ position: relative;
+top: -10px;
+right: -6px;
+rotate: -20deg;
+width: 31px;
+height: 14px;
+}
+
+.line:nth-child(5){
+  position: relative;
+  width: 31px;
+  height: 14px;
+  right: -17px;
+rotate: -260deg;
+top: -16px;
+border-top-right-radius: 50%;
+border-bottom-left-radius: 40px;
+}
+
+.line:nth-child(6){
+  width: 19px;
+  height: 12px;
+ rotate: -360deg;
+position: relative;
+top: -19px;
+right: -26px;
+}  
  /* DARK MODE */
  .toggle {
   margin-top: 10px;
@@ -147,12 +211,6 @@ body {
        width: 33px;
 height: 33px;
   }
-
-
-
-
-
-
 .toggle:hover {
   background-color: white;
   border: 4px solid rgb(2, 2, 2);
@@ -595,9 +653,133 @@ header{
   margin-left: 0;
    z-index: 2000;
   align-content: center;
-  height: 80px;
+  height: 76px;
+     background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px); 
+    
+ }
+
+ header .menu_container{
+  text-align: left;
+  width: fit-content;
+  height: 100vh;
+  display: contents ; 
+  z-index: 6666767; 
+ }
+
+.hide{
+  display: none !important;
+}
+
+ header .menu_container nav_header{
+display: grid;
+align-items: center;
+height: 85px;
+ }
+
+ header .menu_container nav_header ul{
+  position: relative;
+  background-color: rgba(14, 12, 12, 0.993);
+  height: 100vh;
+  width: 55%;
+  top: -16px;
+  padding-left: 0;
+ 
+ }
+
+ header .menu_container nav_header ul li{
+list-style: none;
+position: relative;
+top: 85px;
+left: 1px;
+padding: 20px;
+border-bottom: 2px solid rgba(253, 251, 251, 0.336);
+
 
  }
+
+ header .menu_container nav_header ul li a{
+text-decoration: none;
+color: rgb(255, 253, 253);
+font-weight: bolder;
+font-size: larger;
+font-family: sans-serif;
+transition: color 0.3s ease;
+ }
+
+ header .menu_container nav_header ul li a:hover{
+color: orange;
+ }
+
+ header .menu_container nav_header ul li a::before{
+  content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color:orange;
+    transition: width 0.6s ease;
+ }
+
+
+ header .menu_container nav_header ul li a:hover::before{
+  width: 20%;
+ }
+
+
+header .menu-icon {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  gap: 7px;
+  cursor: pointer;
+  z-index: 4000;
+ left: 2px;
+  padding: 18px;
+  top: 1px;
+ 
+}
+
+.menu-icon .bar {
+  position: relative;
+  width: 40px;
+  height: 7px;
+  background-color: orange;
+  border-radius: 5px;
+  transition: .4s ease;
+}
+
+
+
+
+header .menu-icon.active .bar:nth-child(1){
+ 
+  transform: translate(-50%, -50%) rotate(50deg);
+}
+header .menu-icon.active .bar:nth-child(2){
+ 
+opacity: 0;
+}
+header .menu-icon.active .bar:nth-child(3){
+ 
+  transform: translate(-50%, -50%) rotate(-50deg);
+}
+
+
+
+
+
+
+
+
+
+ .logo_wrapper{
+  margin-left: 9.5%;
+  z-index: 5554;
+ }
+  
+ 
 
 .toggle{
 
@@ -636,10 +818,6 @@ top: 10px;
 /* DARK_MODE DISPLAY END */
 
 
-/* work on this later */
-header .menu_container {
-  display: none;
-}
 
 /* CONTAINER FOR LEFT AND RIGHT */
 .container{
@@ -858,6 +1036,12 @@ footer .move_up a::before {
 /* #################################### */
                 @media (max-width:450px){
                 
+                  .logo_wrapper{
+                    margin-left: 15.5%;
+                   
+                   }
+
+
                   
                   /* DARK_MODE DISPLAY */
                   .intro.dark-mode {
