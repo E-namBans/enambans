@@ -120,18 +120,20 @@ body {
 .logo_wrapper{
   position: fixed;
   top: 8px;
-  left: 0;
-      
+  left: 0;      
      width: 112px;
             height: 50px; 
+            cursor: pointer;
   }
+
   .line{
     margin: auto;
     border-radius: 50px;
     /* width: 51px;
     height: 12px; */
-       background-color: orange;
-}
+      /* background-color: orange; */
+    
+       }
 
 .line:nth-child(1){
   position: relative; 
@@ -139,12 +141,14 @@ body {
 margin-bottom: 5px;
 width: 30px;
 height: 14px;
+background: linear-gradient(to right, rgb(255, 166, 0) 0%, blue 50%, red 100%);
 }
 
 .line:nth-child(2){   
 rotate: -4deg;
 height: 14px;
 width: 37px;
+background: linear-gradient(to right, rgb(255, 166, 0) 0%, blue 50%, red 100%);
 }
 
 .line:nth-child(3){ 
@@ -154,6 +158,7 @@ width: 37px;
 rotate: -230deg;
 height: 14px;
 width: 56px;
+background: linear-gradient(to left, rgb(255, 166, 0) 0%, blue 50%, red 100%);
 }
 
 .line:nth-child(4){
@@ -163,6 +168,7 @@ right: -6px;
 rotate: -20deg;
 width: 31px;
 height: 14px;
+background: linear-gradient(to right, rgb(40, 9, 214) 0%, blue 50%, red 100%);
 }
 
 .line:nth-child(5){
@@ -174,6 +180,8 @@ rotate: -260deg;
 top: -16px;
 border-top-right-radius: 50%;
 border-bottom-left-radius: 40px;
+background: linear-gradient(to left, rgb(255, 166, 0) 0%, blue 60%, red 100%);
+z-index: 2;
 }
 
 .line:nth-child(6){
@@ -183,6 +191,7 @@ border-bottom-left-radius: 40px;
 position: relative;
 top: -19px;
 right: -26px;
+background: linear-gradient(to right, rgb(255, 166, 0) 0%, rgb(255, 166, 0) 50%, red 100%);
 }  
  /* DARK MODE */
  .toggle {
@@ -684,7 +693,6 @@ height: 85px;
   width: 55%;
   top: -16px;
   padding-left: 0;
- 
  }
 
  header .menu_container nav_header ul li{
@@ -694,8 +702,6 @@ top: 85px;
 left: 1px;
 padding: 20px;
 border-bottom: 2px solid rgba(253, 251, 251, 0.336);
-
-
  }
 
  header .menu_container nav_header ul li a{
@@ -719,8 +725,7 @@ color: orange;
     width: 0;
     height: 3px;
     background-color:orange;
-    transition: width 0.6s ease;
- }
+    }
 
 
  header .menu_container nav_header ul li a:hover::before{
@@ -747,40 +752,26 @@ header .menu-icon {
   height: 7px;
   background-color: orange;
   border-radius: 5px;
-  transition: .4s ease;
+  transition: .6s ease;
 }
-
-
-
-
 header .menu-icon.active .bar:nth-child(1){
  
   transform: translate(-50%, -50%) rotate(50deg);
 }
 header .menu-icon.active .bar:nth-child(2){
- 
-opacity: 0;
+  position: relative; 
+ transform: translateY(30px) ;
 }
-header .menu-icon.active .bar:nth-child(3){
- 
+
+header .menu-icon.active .bar:nth-child(3){ 
   transform: translate(-50%, -50%) rotate(-50deg);
 }
-
-
-
-
-
-
-
-
 
  .logo_wrapper{
   margin-left: 9.5%;
   z-index: 5554;
  }
   
- 
-
 .toggle{
 
 top: 10px;
@@ -815,9 +806,11 @@ top: 10px;
     background-color: black;  
   }
 
+header.dark-mode{
+  background-color:rgba(0, 0, 0, 0.801);
+  backdrop-filter: blur(5px); 
+}
 /* DARK_MODE DISPLAY END */
-
-
 
 /* CONTAINER FOR LEFT AND RIGHT */
 .container{

@@ -83,7 +83,7 @@ moveRobot();
 
 
 
-//  HAMBERGER MENU 
+//  HAMBURGER MENU 
 
 const menuIcon = document.getElementById("menu-icon");
 const menuContainer = document.getElementById("menu_container");
