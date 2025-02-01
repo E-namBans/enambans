@@ -11,9 +11,18 @@ const footerDark = document.getElementById('footer');
 const heading1 = document.getElementById('heading1');
 const paragraph1 = document.getElementById('paragraph1');
 const header = document.querySelector('header');
+const explore = document.getElementById('explore_more');
+const explore1 = document.getElementById('explore_more1');
+const explore2 = document.getElementById('explore_more2');
+const explore3 = document.getElementById('explore_more3');
 
 
 
+
+
+
+
+console.log(explore)
 
 toggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
@@ -26,6 +35,10 @@ toggle.addEventListener('click', () => {
  heading1.classList.toggle('dark-mode');
  paragraph1.classList.toggle('dark-mode');
 header.classList.toggle('dark-mode');
+explore.classList.toggle('dark-mode');
+explore1.classList.toggle('dark-mode');
+explore2.classList.toggle('dark-mode');
+explore3.classList.toggle('dark-mode');
 
   if (document.body.classList.contains('dark-mode')) {
     icon.textContent = '☀️';
@@ -33,6 +46,14 @@ header.classList.toggle('dark-mode');
     icon.textContent = '🌙';
   }
 });
+
+function toggleDarkMode() {
+  const explore = document.querySelectorAll('.explore_more');
+  explore.forEach(element => {
+      explore.classList.toggle('dark-mode');
+  });
+}
+
 
 
 // MY AI ROBOT //
@@ -84,15 +105,12 @@ moveRobot();
 
 
 //  HAMBURGER MENU 
-
 const menuIcon = document.getElementById("menu-icon");
 const menuContainer = document.getElementById("menu_container");
 
 
-
 menuIcon.addEventListener("click", () => {
 menuIcon.classList.toggle("active") ;
-
 menuContainer.classList.toggle("hide");
 });
 

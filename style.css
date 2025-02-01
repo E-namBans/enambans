@@ -129,69 +129,66 @@ body {
   .line{
     margin: auto;
     border-radius: 50px;
-    /* width: 51px;
-    height: 12px; */
-      /* background-color: orange; */
-    
+    background-color: orange;
        }
 
 .line:nth-child(1){
   position: relative; 
  rotate: 5deg;
-margin-bottom: 5px;
-width: 30px;
-height: 14px;
-background: linear-gradient(to right, rgb(255, 166, 0) 0%, blue 50%, red 100%);
-}
+margin-bottom: 4px;
+width: 29px;
+height: 11px;
+/* background: linear-gradient(to right, rgb(255, 166, 0) 0%, blue 50%, red 100%); */
 
+}
 .line:nth-child(2){   
-rotate: -4deg;
-height: 14px;
-width: 37px;
-background: linear-gradient(to right, rgb(255, 166, 0) 0%, blue 50%, red 100%);
+rotate: -8deg;
+height: 10px;
+width: 39px;
+/* background: linear-gradient(to right, rgb(255, 166, 0) 0%, blue 50%, red 100%); */
 }
 
 .line:nth-child(3){ 
   position: relative;
-  top: 3px; 
+  top: 6PX; 
   right:-1px; 
 rotate: -230deg;
-height: 14px;
-width: 56px;
-background: linear-gradient(to left, rgb(255, 166, 0) 0%, blue 50%, red 100%);
+height: 10px;
+width: 47px;
+/* background: linear-gradient(to left, rgb(255, 166, 0) 0%, blue 50%, red 100%); */
 }
 
 .line:nth-child(4){
  position: relative;
-top: -10px;
+top: -5px;
 right: -6px;
-rotate: -20deg;
+rotate: -41deg;
 width: 31px;
-height: 14px;
-background: linear-gradient(to right, rgb(40, 9, 214) 0%, blue 50%, red 100%);
+height: 9px;
+/* background: linear-gradient(to right, rgb(40, 9, 214) 0%, blue 50%, red 100%); */
 }
 
 .line:nth-child(5){
   position: relative;
-  width: 31px;
-  height: 14px;
-  right: -17px;
-rotate: -260deg;
-top: -16px;
+  width: 25px;
+  height: 10px;
+  right: -15px;
+rotate: -267deg;
+top: -11px;
 border-top-right-radius: 50%;
 border-bottom-left-radius: 40px;
-background: linear-gradient(to left, rgb(255, 166, 0) 0%, blue 60%, red 100%);
+/* background: linear-gradient(to left, rgb(255, 166, 0) 0%, blue 60%, red 100%); */
 z-index: 2;
 }
 
 .line:nth-child(6){
-  width: 19px;
-  height: 12px;
+  width: 25px;
+  height: 9px;
  rotate: -360deg;
 position: relative;
-top: -19px;
-right: -26px;
-background: linear-gradient(to right, rgb(255, 166, 0) 0%, rgb(255, 166, 0) 50%, red 100%);
+top: -10px;
+right: -22px;
+/* background: linear-gradient(to right, rgb(255, 166, 0) 0%, rgb(255, 166, 0) 50%, red 100%); */
 }  
  /* DARK MODE */
  .toggle {
@@ -258,6 +255,10 @@ footer.dark-mode{
 /* header.dark-mode{
   background-color: rgb(0, 0, 0);
 } */
+
+.explore_more.dark-mode  {
+  color: white;
+}
 
 
 
@@ -484,11 +485,56 @@ font-weight: bolder;
 text-transform: uppercase;
   }
 
+  .right .explore_more h4 {    
+               display: inline-block;
+    width: 130px;
+    height: 20px;
+   cursor:pointer;
+ }
+
+ /* .right h4 {
+  background: linear-gradient(to right, rgba(255, 166, 0, 0.301) 0%, rgba(255, 166, 0, 0.486) 100%) no-repeat;
+  background-size: 0% 2px; 
+  background-position: left bottom; 
+  transition: background-size 0.3s ease; 
+} */
+/* .right h4:hover {
+  background-size: 100% 2px;
+  color: orange;
+  border: 1px solid red;
+} */
+
+  .right h4::before,
+  .right h4::after {
+      content: "Explore more ⧉";
+       position: absolute;      
+      transition: transform 0.1s ease;
+      }
+
+  .right h4::before {
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  }
+
+  .right h4::after {
+      clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);     
+  }
+ 
+  
+  .right h4:hover::before {
+      transform: translateY(-3px);
+  }
+
+  .right h4:hover::after {
+      transform: translateY(3px);
+  }
+
+.right h4 .orange-symbol {
+            color: orange ;
+        }
   .right p{
     font-family: open-sans;
        font-size: larger;
-      
-       }
+             }
 
       
 .right_container{
@@ -552,7 +598,7 @@ color: white;
  section .card_p h3{
   color: rgb(231, 179, 7);
    }
- section a{
+ section .link_p{
   text-decoration: none;
   color: #111102;
   background-color:rgb(231, 179, 7);
@@ -564,10 +610,17 @@ height: 30px;
 border-radius: 2px;
 /* border: 1px solid rgb(128, 124, 114); */
 }
-section a:hover{
+section .link_p:hover{
     background-color: white;
    
   }
+
+section .explore_more{
+  color:black;
+   position:relative;
+  top: -30px;
+}
+
   .right #about_me{
       width: 80%;
   }
@@ -597,7 +650,6 @@ section a:hover{
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-
  
   /* Footer styles */
   footer { 
@@ -605,8 +657,7 @@ section a:hover{
     color: #745e5e;
     text-align: center;   
     border: 1px solid rgba(255, 255, 255, 0) ;
-  
-  
+   
   }
 
   footer p{
@@ -630,8 +681,6 @@ footer  div{
  #
  ############
  */
-
-
  
 /* Media Queries for Responsiveness */
 
@@ -646,9 +695,9 @@ footer  div{
   }
        }
 
-/* ##############################################
-/* FOR TABLET DEVICES */
-@media (max-width: 768px) {
+
+/* FOR TABLET DEVICES   768px */
+@media (max-width: 830px) {
 body{
   overflow-x: hidden;  
    border-left: none;  
@@ -662,11 +711,10 @@ header{
   margin-left: 0;
    z-index: 2000;
   align-content: center;
-  height: 76px;
+  height: 68px;
      background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(5px); 
-    
- }
+     }
 
  header .menu_container{
   text-align: left;
@@ -690,7 +738,7 @@ height: 85px;
   position: relative;
   background-color: rgba(14, 12, 12, 0.993);
   height: 100vh;
-  width: 55%;
+  width: 75%;
   top: -16px;
   padding-left: 0;
  }
@@ -701,7 +749,7 @@ position: relative;
 top: 85px;
 left: 1px;
 padding: 20px;
-border-bottom: 2px solid rgba(253, 251, 251, 0.336);
+border-bottom: 1px solid rgba(255, 166, 0, 0.24);
  }
 
  header .menu_container nav_header ul li a{
@@ -720,19 +768,18 @@ color: orange;
  header .menu_container nav_header ul li a::before{
   content: '';
     position: absolute;
-    bottom: 10px;
+   bottom: 0;
     left: 0;
     width: 0;
-    height: 3px;
-    background-color:orange;
+    height: 1px;
+    background-color:rgba(236, 234, 229, 0.712);
+    transition: 0.8s ease;
     }
-
-
  header .menu_container nav_header ul li a:hover::before{
-  width: 20%;
+  width: 100%;
  }
 
-
+/*############ HAMBURGER MENU ############*/
 header .menu-icon {
   display: flex;
   position: fixed;
@@ -742,10 +789,8 @@ header .menu-icon {
   z-index: 4000;
  left: 2px;
   padding: 18px;
-  top: 1px;
- 
+  top: 1px; 
 }
-
 .menu-icon .bar {
   position: relative;
   width: 40px;
@@ -754,24 +799,30 @@ header .menu-icon {
   border-radius: 5px;
   transition: .6s ease;
 }
-header .menu-icon.active .bar:nth-child(1){
- 
+header .menu-icon .bar:nth-child(2){ 
+ width: 25px;
+}
+header .menu-icon.active .bar:nth-child(1){ 
   transform: translate(-50%, -50%) rotate(50deg);
 }
 header .menu-icon.active .bar:nth-child(2){
   position: relative; 
  transform: translateY(30px) ;
+ animation: blink 1.2s infinite; 
 }
-
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 header .menu-icon.active .bar:nth-child(3){ 
   transform: translate(-50%, -50%) rotate(-50deg);
 }
 
+/* ########### LOGO ############# */
  .logo_wrapper{
   margin-left: 9.5%;
   z-index: 5554;
- }
-  
+ }  
 .toggle{
 
 top: 10px;
@@ -825,8 +876,6 @@ header.dark-mode{
 .links {
   display: none;
 }
-
-
 /* LEFT VIEW NOW TOP VIEW */
   .left {      
    display: grid;
@@ -842,8 +891,7 @@ padding-top: 30px;
      .color_sep{
       margin-left: 4vw;              
                padding-bottom: 10px;
-              
-                }
+                              }
 
 .left h1{
   color:black;
@@ -882,15 +930,13 @@ padding-top: 30px;
             display: none;
            }
                        
-
   .right {
     display: grid;
     text-align:justify;
       margin-left: auto;
         width: 100%;
         position: relative;
-      
-          }
+                }
 
 section h2{
   color: #8b9189;
@@ -933,7 +979,6 @@ footer{
  footer p{
   margin-left: 0 ;
   margin-right: 0;
-
  }
 
 footer  div{  
@@ -959,8 +1004,7 @@ display: flex;
  
  .links_footer ul li:hover{
   color:rgba(241, 187, 9, 0.788);
-  transform: translatey(-4px);  
- 
+  transform: translatey(-4px);   
  }
   
 footer .move_up a{
@@ -1003,12 +1047,10 @@ footer .move_up a::before {
 }
 }
 
-
 /* #######################################*/
 
 @media (max-width: 554px){  
 
-  
   .left {     
    overflow-x: hidden;
  padding-top: 5%;
@@ -1016,25 +1058,19 @@ footer .move_up a::before {
   .left h1{
     font-size: 3.0rem;
       }
-
-
-      .color_sep{
+     .color_sep{
        margin-left: 4vw;              
                 padding-bottom: 10px;
                
                  }
                 }
   
-
 /* #################################### */
                 @media (max-width:450px){
                 
                   .logo_wrapper{
                     margin-left: 15.5%;
-                   
-                   }
-
-
+                                      }
                   
                   /* DARK_MODE DISPLAY */
                   .intro.dark-mode {
@@ -1058,10 +1094,10 @@ footer .move_up a::before {
                     background-color: black;  
                   }
 
-                                    /* DARK_MODE DISPLAY END */
+     /*DARK_MODE DISPLAY END */
 
-                  /* LEFT VIEW NOW TOP VIEW */
-                  .left {      
+    /* LEFT VIEW NOW TOP VIEW */
+       .left {      
                  height:266px ;
                   
                      overflow-x: hidden;   
@@ -1075,28 +1111,7 @@ margin-top: -100px ;
                              
                             }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* For larger devices (laptops/desktops) */
-
-
-
-
 
 /* 
  ############   #
