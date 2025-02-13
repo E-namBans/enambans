@@ -10,7 +10,7 @@ html{
   body {
     margin: 0;
     /* height: 100vh; */
-    /* overflow: hidden; */
+    overflow-x: hidden;
     /* background-color: rgb(0, 0, 0); */
   }
 /* ######### MOUSE POINTER */
@@ -210,7 +210,7 @@ header{
     justify-content: space-around;
     height: 68px;
            width: 100vw;
-            z-index: 1;
+            z-index: 2;
          
             top: 0;
                    }
@@ -450,7 +450,7 @@ border-radius: 20px;
 .right{
     position: relative;
     width: 50%;
-    background-image: url(Asset/main_V1 wallpaper.png);
+    background-image: url(/Asset/main_V1\ wallpaper.png);
     height: 100vh;
     background-color: rgb(155, 146, 121);
     background-blend-mode:color-burn;
@@ -489,7 +489,6 @@ border-radius: 20px;
 
  
 /* ####### ABOUT SECTION ##### */
-
 .about1{
 padding-top: 60px;
   display: flex;
@@ -505,9 +504,6 @@ padding-top: 60px;
   justify-content: center;
    z-index: -1; 
  width: 70%;  
-  /* transform: translateX(100%); 
- animation: floatIn 3.8s ease-out forwards; */
-
 }
 
 .left_about1_wrapper{ 
@@ -520,7 +516,7 @@ padding-top: 60px;
   animation: floatIn 3s ease-out 0.1s forwards;
    letter-spacing: 10px;
    text-transform: capitalize;
-   font-size: 8rem;
+   font-size: 5rem;
    text-align: left;
    padding-bottom: 30px;
    color: orange;
@@ -538,21 +534,37 @@ padding-top: 60px;
   font-family: sans-serif;
  font-size: 1rem;
  color: rgb(255, 255, 255);
+ line-height:23px ;
+ text-align: justify;
 }
 
 
 .right_about1{
-
-  right:10% ;
+height:max-content;
   width:30%;
-  height: max-content;
-  transform: translateY(200%); 
- animation: floatIn 3.8s ease-out forwards; 
- border: 1px solid green;
+  z-index: -1;
 justify-content: center;
-margin-top: 50vh;
+margin-top: -59px;
+
+
 }
+.right_about1 .right_about1_profile_pic img{
+  /* border-radius: 10px; */
+  border-bottom-left-radius: 45px;
+  background-color: rgb(0, 0, 0);
+  background-blend-mode:darken;
+  z-index: -1;
+}
+
   /* ######## EYE NEURON LOADER ####### */
+.eye_neuron_wrapper{
+position: fixed;
+top: 44px;
+z-index: 1;
+right: 560px;
+
+}
+
 
 .eye_neuron_loader{
   justify-content: center;
@@ -763,15 +775,19 @@ box-shadow: 2px 2px rgba(255, 255, 255, 0.555);
 
 
  .projects1 .projects1_wrapper h1{
-  /* color: orange; */
+  color: orange;
  font-size: 4rem;
  margin-left: 35px;
  text-align: left;
+ letter-spacing: 10px;
+ font-size: 5rem;
+
 }
 
 .projects1_wrapper h2{
  margin-left: 35px;
  color: rgb(153, 143, 143);
+ margin-top: -40px;
 }
 
 .card_p{
@@ -812,7 +828,6 @@ box-shadow: 2px 2px rgba(255, 255, 255, 0.555);
   text-decoration: none;
 }
 
-
 .projects1_wrapper .card_wrapper .card .card_p .link_p:hover{
   background-color: white; 
 }
@@ -847,7 +862,7 @@ width: 100%;
 } */
 
 /* Title */
-h1 {
+ .ui_ux_component h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 3em;
   text-align: center;
@@ -981,10 +996,9 @@ footer{
 /* FOR TABLET DEVICES   768px */
 @media (max-width: 830px) {
   
-
 section .home{
   flex-direction: column-reverse;
- 
+ width: 100%;
 }
 
 .left{
@@ -998,7 +1012,17 @@ section .home{
 
 .about1{
 flex-direction: column-reverse;
+flex-direction: column-reverse;
+justify-content: center;
+align-items: center;
 }
+
+.left_about1{
+  width: 100%;
+  margin-bottom: -0px !important;
+  
+ }
+
 
 .left_about1_wrapper{ 
   width: 90%; 
@@ -1006,24 +1030,35 @@ margin-top: -120px;
   
 }
 .left_about1 .left_about1_wrapper h1{
-   text-align: center;
-   
+   text-align: left;
+   font-size: 4rem;
+   letter-spacing: 10px;
+   margin-top: 210px;
+   margin-bottom: 0;
+   color: orange; 
+ }
+
+ .left_about1 .left_about_wrapper P{
+  text-align: justify;
+ 
  }
 
  .right_about1{
-position: fixed; 
-top: -290px;
-left: 40vw;
+  margin-top: 10px;
+     width: 90%;
+  /* margin-left: -30%; */
+}
+
+.right_about1 .right_about1_profile_pic img{
+ transform: rotate(50% -50%);
+border-radius: 10px;
+height:800px;
 
 }
 
 
 
 
-.projects1_wrapper{
-  overflow-y: hidden !important;
-  height: 100vh;
-}
 
 .projects1_wrapper .card_wrapper{ 
    
@@ -1033,36 +1068,10 @@ left: 40vw;
   padding: 40px;
   }
 
-  .about1{
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-   overflow-y: hidden;
-   overflow-x: hidden;
-  }
-
-.left_about1{
- width: 100%;
- margin-bottom: -0px !important;
  
-}
 
-
-  .left_about1 .left_about_wrapper h1{
+ 
   
-    font-size: 120px;
-    letter-spacing: 10px;
-    margin-top: 110px;
-    margin-bottom: 0;
-    color: orange; 
-  }
-  
-  .left_about1 .left_about_wrapper P{
-   text-align: justify;
-  
-  }
-
-
 
 
 
