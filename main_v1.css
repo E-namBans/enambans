@@ -450,7 +450,7 @@ border-radius: 20px;
 .right{
     position: relative;
     width: 50%;
-    background-image: url(Asset/wallpaper.png);
+    background-image: url(Asset/main_V1 wallpaper.png);
     height: 100vh;
     background-color: rgb(155, 146, 121);
     background-blend-mode:color-burn;
