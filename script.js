@@ -19,9 +19,6 @@ const explore3 = document.getElementById('explore_more3');
 
 
 
-
-
-
 console.log(explore)
 
 toggle.addEventListener('click', () => {
@@ -113,6 +110,7 @@ menuIcon.addEventListener("click", () => {
 menuIcon.classList.toggle("active") ;
 menuContainer.classList.toggle("hide");
 });
+
 
 
 

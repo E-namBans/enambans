@@ -571,8 +571,7 @@ border: 1px solid rgb(136, 118, 118);
         padding: 20PX;
     margin-bottom: 50px;
     transition: transform 0.3s ease, font-size 0.7s ease;
- 
-  }
+   }
 
   section .card:hover{
     transform: translatex(26px);   
@@ -722,6 +721,7 @@ header{
   height: 100vh;
   display: contents ; 
   z-index: 6666767; 
+  
  }
 
 .hide{
@@ -747,9 +747,11 @@ height: 85px;
 list-style: none;
 position: relative;
 top: 85px;
-left: 1px;
 padding: 20px;
 border-bottom: 1px solid rgba(255, 166, 0, 0.24);
+
+
+
  }
 
  header .menu_container nav_header ul li a{
@@ -759,6 +761,8 @@ font-weight: bolder;
 font-size: larger;
 font-family: sans-serif;
 transition: color 0.3s ease;
+padding: 15px;
+
  }
 
  header .menu_container nav_header ul li a:hover{
