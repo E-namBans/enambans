@@ -57,6 +57,15 @@ explore3.classList.toggle('dark-mode');
 
 
 
+//  HAMBURGER MENU 
+const menuIcon = document.getElementById("menu-icon");
+const menuContainer = document.getElementById("menu_container");
+
+
+menuIcon.addEventListener("click", () => {
+menuIcon.classList.toggle("active") ;
+menuContainer.classList.toggle("hide");
+});
 
 
 

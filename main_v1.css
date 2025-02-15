@@ -30,7 +30,7 @@ html{
 .logo_wrapper{
   position: fixed;
   top: 8px;
-  left: 0;      
+  left: 70px;      
      width: 112px;
             height: 50px; 
             cursor:pointer;    
@@ -185,6 +185,27 @@ footer.dark-mode{
 
 /* ##### NAVIGATION ########## */
 
+/* Header styles */
+header{
+  position: fixed;
+  display: flex;  
+  align-content: center;
+  justify-content: space-around;
+  height: 68px;
+         width: 100vw;
+          z-index: 2;         
+          top: 0;
+                 }
+
+header .menu_container {
+  display: none;
+}
+
+/*  NAVIGATION FOR DESKTOP VIEW ###### */
+nav{
+
+  transform: translate(-40% );
+}
 
 nav .nav_ul{
   display: flex;
@@ -207,17 +228,6 @@ font-size: 1.1rem;
 }
  
 
-/* Header styles */
-header{
-    position: fixed;
-    display: flex;  
-    align-content: center;
-    justify-content: space-around;
-    height: 68px;
-           width: 100vw;
-            z-index: 2;         
-            top: 0;
-                   }
 
   
 section .home{
@@ -1007,8 +1017,141 @@ footer{
    
 
 
-/* FOR TABLET DEVICES   768px */
+/* ######## FOR TABLET DEVICES   768px */
+
 @media (max-width: 830px) {
+
+  nav{
+    display: none;
+  }
+
+/* HEADER FOR MY NAVIGATION */
+header{
+  margin-left: 0;
+   z-index: 2000;
+  align-content: center;
+  height: 68px;
+     /* background-color: rgba(0, 0, 0, 0.8); */
+    backdrop-filter: blur(5px); 
+   
+     }
+
+ header .menu_container{
+  text-align: left;
+  width: fit-content;
+  height: 100vh;
+  display: contents ; 
+  z-index: 6666767; 
+ 
+ }
+
+.hide{
+  display: none !important;
+}
+
+ header .menu_container nav_header{
+display: grid;
+align-items: center;
+height: 85px;
+ }
+
+ header .menu_container nav_header ul{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+   top: -16px;
+ left: -251px;
+  padding-left: 0;
+  background-color: #030202;
+ }
+
+ header .menu_container nav_header ul li{
+list-style: none;
+position: relative;
+background-color: #030202;
+top: 80px;
+/* left: -20px; */
+padding: 20px;
+border-bottom: 1px solid rgba(255, 166, 0, 0.24);
+ }
+
+ header .menu_container nav_header ul li a{
+text-decoration: none;
+color: rgb(255, 253, 253);
+font-weight: bolder;
+font-size: larger;
+font-family: sans-serif;
+transition: color 0.3s ease;
+padding: 15px;
+ }
+
+ header .menu_container nav_header ul li a:hover{
+color: orange;
+ }
+
+ header .menu_container nav_header ul li a::before{
+  content: '';
+    position: absolute;
+   bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color:rgba(236, 234, 229, 0.712);
+    transition: 0.8s ease;
+    }
+ header .menu_container nav_header ul li a:hover::before{
+  width: 100%;
+ }
+
+/*############ HAMBURGER MENU ############*/
+header .menu-icon {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  gap: 7px;
+  cursor: pointer;
+  z-index: 4000;
+ left: 2px;
+  padding: 18px;
+  top: 1px; 
+}
+.menu-icon .bar {
+  position: relative;
+  width: 40px;
+  height: 7px;
+  background-color: orange;
+  border-radius: 5px;
+  transition: .6s ease;
+}
+header .menu-icon .bar:nth-child(2){ 
+ width: 25px;
+}
+header .menu-icon.active .bar:nth-child(1){ 
+  transform: translate(-50%, -50%) rotate(50deg);
+}
+header .menu-icon.active .bar:nth-child(2){
+  position: relative; 
+ transform: translateY(30px) ;
+ animation: blink 1.2s infinite; 
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+header .menu-icon.active .bar:nth-child(3){ 
+  transform: translate(-50%, -50%) rotate(-50deg);
+}
+
+
+
+
+
+
+
+
+
+
+
   
 section .home{
   flex-direction: column-reverse;
