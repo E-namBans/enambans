@@ -1021,6 +1021,10 @@ footer{
 
 @media (max-width: 830px) {
 
+#mouse_pointer{
+  display: none;
+}
+    
   nav{
     display: none;
   }
