@@ -1031,18 +1031,18 @@ header{
    z-index: 2000;
   align-content: center;
   height: 68px;
-     /* background-color: rgba(0, 0, 0, 0.8); */
-    backdrop-filter: blur(5px); 
+  backdrop-filter: blur(5px); 
    
      }
 
  header .menu_container{
   text-align: left;
   width: fit-content;
-  height: 100vh;
+  /* height: 100vh; */
   display: contents ; 
   z-index: 6666767; 
- 
+  width: 100%;
+     background-color: rgba(107, 12, 12, 0.8);   
  }
 
 .hide{
@@ -1050,17 +1050,20 @@ header{
 }
 
  header .menu_container nav_header{
+  position: absolute;
 display: grid;
 align-items: center;
 height: 85px;
+width: 66%;
+left: 0px;
  }
 
  header .menu_container nav_header ul{
-  position: relative;
+  position: absolute;
   height: 100vh;
   width: 100%;
    top: -16px;
- left: -251px;
+ left: 0px;
   padding-left: 0;
   background-color: #030202;
  }
@@ -1068,9 +1071,7 @@ height: 85px;
  header .menu_container nav_header ul li{
 list-style: none;
 position: relative;
-background-color: #030202;
 top: 80px;
-/* left: -20px; */
 padding: 20px;
 border-bottom: 1px solid rgba(255, 166, 0, 0.24);
  }
