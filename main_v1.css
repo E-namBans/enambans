@@ -1088,6 +1088,7 @@ font-size: larger;
 font-family: sans-serif;
 transition: color 0.3s ease;
 padding: 15px;
+     border: 1px solid red;
      padding-right: 58%;
  }
 
