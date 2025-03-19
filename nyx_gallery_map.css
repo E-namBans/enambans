@@ -1,0 +1,254 @@
+ /*========MapHTML=======================*/
+ /*=========GRID-1-MAP====================*/
+ 
+ .grid-1-map a .link1 {
+    width: 26.4rem;
+    height: 7.2rem;
+    background-image: linear-gradient(to right, #D5966C 5.6rem, #151515 -20.5rem);
+    position: absolute;
+    top: 1rem;
+    left: 38.6rem;
+    z-index: 99;
+}
+
+.grid-1-map #map-location {
+    position: absolute;
+    margin-top: -399px;
+    margin-left: 689px;
+    z-index: 99;
+}
+
+.grid-1-map a .link1:hover {
+    background-image: linear-gradient(to right, #151515 5.6rem, #d5966c -20.4rem);
+}
+
+.grid-1-map a .link1 #location {
+    width: 20.4rem;
+    height: 7.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+}
+
+.grid-1-map a .link1 #location .head-eb {
+    width: 19rem;
+    height: 2.4rem;
+}
+
+.arrow1 {
+    position: absolute;
+    width: 5.6rem;
+    height: 7.2rem;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-arrow {
+    width: 8px;
+    height: 24px;
+}
+/*=====x====GRID-1-MAP========x============*/
+/*===========GRID-2-LOCATION================*/
+
+#grid-2-location {
+    width: 144rem;
+    height: 54.8rem;
+    display: flex;
+    background-color: var(--color-black);
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-2-location .flex {
+    width: 100%;
+    height: 31.6rem;
+    display: flex;
+}
+
+#grid-2-location .flex #left-side .head-l {
+    width: 35rem;
+    height: 14rem;
+    color: var(--color-white);
+}
+
+#grid-2-location .flex #right-side {
+    margin-left: 22rem;
+}
+
+#grid-2-location .flex #right-side #king-street {
+    margin-bottom: 3.2rem;
+}
+
+#grid-2-location .flex #right-side #king-street .head-s {
+    color: var(--color-gold)
+}
+
+#grid-2-location .flex #right-side #king-street .body-m {
+    color: var(--color-white);
+}
+
+#grid-2-location .flex #right-side .open-hours {
+    width: 51rem;
+    height: 12.8rem;
+    color: var(--color-white);
+}
+/*===========GRID-2-LOCATION==============*/
+/*=============FOOTER=====================*/
+
+.footer-map {
+    background-color: var(--color-gold);
+}
+
+.head-s-footer,
+.body-s-footer {
+    color: var(--color-black);
+}
+
+footer .footer #icons a .icon-map {
+    fill: var(--color-black);
+    margin-right: 1.0rem;
+}
+
+footer .footer #icons a .icon-map:hover {
+    fill: var(--color-white);
+}
+/*========x=====FOOTER========x=========*/
+/*=============MEDIA QUERIES===========*/
+
+@media (max-width:998px) {
+    body {
+        width: 993px;
+        height: 1252px !important;
+    }
+    #mmapp {
+        height: 600px;
+    }
+    #mapp {
+        overflow: hidden;
+        padding-bottom: 60%;
+    }
+    #mapp iframe {
+        left: 0;
+        top: 0;
+        height: 600px;
+        width: 993px;
+        position: absolute;
+    }
+    /*============================*/
+    .grid-1-map a .link1 {
+        position: absolute;
+        left: 0px;
+        top: 88px;
+    }
+    /*=======================*/
+    #grid-2-location {
+        width: 993px;
+        height: 436px;
+    }
+    .grid-1-map #map-location {
+        position: absolute;
+        margin-left: 460px;
+    }
+    #grid-2-location .flex {
+        width: 100%;
+        height: 31.6rem;
+        display: flex;
+        justify-content: center;
+    }
+    #grid-2-location .flex #left-side .head-l {
+        width: 35rem;
+        height: 14rem;
+        color: var(--color-white);
+    }
+    #grid-2-location .flex #right-side {
+        margin-left: 111px;
+    }
+    #grid-2-location .flex #right-side #king-street {
+        margin-bottom: 3.2rem;
+    }
+    #grid-2-location .flex #right-side #king-street .head-s {
+        color: var(--color-gold)
+    }
+    #grid-2-location .flex #right-side #king-street .body-m {
+        width: 39.8rem;
+    }
+    #grid-2-location .flex #right-side .open-hours {
+        width: 39.8rem;
+        height: 12.8rem;
+        color: var
+    }
+}
+/*=========MOBILE===============*/
+
+@media (max-width:390px) {
+    body {
+        width: 375px;
+        height: 1389px;
+    }
+    #mmapp {
+        height: 493px;
+    }
+    #mapp {
+        overflow: hidden;
+        padding-bottom: 15.25%;
+    }
+    #mapp iframe {
+        left: 0;
+        top: 0;
+        height: 550px;
+        width: 375px;
+        position: absolute;
+    }
+    /*============================*/
+    .grid-1-map a .link1 {
+        position: absolute;
+        left: 0px;
+        top: 68px;
+    }
+    /*==============================*/
+    #grid-2-location {
+        width: 375px;
+        height: 54.8rem;
+        display: flex;
+        background-color: var(--color-black);
+        justify-content: center;
+        align-items: center;
+        margin-top: 500px;
+    }
+    .grid-1-map #map-location {
+        position: absolute;
+        margin-left: 160px;
+        margin-top: 120px;
+    }
+    #grid-2-location .flex {
+        width: 111rem;
+        height: 31.6rem;
+        display: grid;
+    }
+    #grid-2-location .flex #left-side .head-l {
+        width: 34.3rem;
+        height: 4.5rem;
+        font-size: 5.0rem;
+        position: absolute;
+        margin-left: -179px;
+        margin-top: -90px;
+    }
+    #grid-2-location .flex #right-side {
+        position: absolute;
+        margin-left: 16px;
+    }
+    /* #grid-2-location .flex #right-side #king-street .head-s {
+       
+    }
+    #grid-2-location .flex #right-side #king-street .body-m {
+       
+    } */
+    #grid-2-location .flex #right-side .open-hours {
+        width: 34.3rem;
+        height: 29.6rem;
+    }
+}

@@ -23,7 +23,7 @@ body {
   width: 100%;
   margin: 0;
   box-sizing: border-box;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-optical-sizing: auto;
            }
         
@@ -129,7 +129,8 @@ body {
   .line{
     margin: auto;
     border-radius: 50px;
-    background-color: orange;
+    /* background-color: orange; */
+    background-color: goldenrod;
        }
 
 .line:nth-child(1){
@@ -332,23 +333,21 @@ overflow-y: auto;
     font-size: 5.5vw;
  width: fit-content;
    color: white;
-    line-height: 89px;
+    line-height: 79px;
   letter-spacing: 3px;
   
   }
 
   .color_sep_back{
     margin-top: -9px !important;
-      border-top:1px solid yellow ;
+      border-top:1px solid orange ;
     border-top-style: dashed;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid orange;
     border-bottom-style: dashed;
 width: 75%;
 padding-top: 13PX;
 padding-left: 5px;
-
   }
-
   
  
   /* ANIMATION DESIGN FOR CLASS = ANIMATION */
@@ -365,7 +364,8 @@ padding-left: 5px;
 
 .animation span::before{
     content: "Frontend Developer";
-    color: rgb(231, 179, 7);
+    /* color: rgb(231, 179, 7); */
+    color: orange;
     animation: words 20s infinite;
 }
 .animation span::after{
@@ -380,7 +380,7 @@ animation: cursor 0.6s infinite, typing 20s steps(30) infinite
 }
 @keyframes cursor{
     to{
-        border-left: 4px solid rgb(231, 179, 7);
+        border-left: 4px solid orange;
     }
 }
 @keyframes words{
@@ -465,10 +465,10 @@ padding-top: 20px;
   
   nav a:hover {
   
-    color: rgb(231, 179, 7);
+    color: orange;
   }
 
-/* RIGHT SIDE */
+/* ########## RIGHT SIDE ########### */
   .right{
        padding-left: 7%;    
     margin-left: 36vw;
@@ -480,7 +480,8 @@ padding-top: 20px;
 
   .right h2{
     font-size: 1.5rem;
-    color:black;
+    /* color:black; */
+    color: goldenrod;
 font-weight: bolder;
 text-transform: uppercase;
   }
@@ -490,23 +491,16 @@ text-transform: uppercase;
     width: 130px;
     height: 20px;
    cursor:pointer;
+   color:rgb(23, 70, 141);
+font-weight: 900;
+/* border: 1px solid rgba(255, 255, 255, 0); */
  }
 
- /* .right h4 {
-  background: linear-gradient(to right, rgba(255, 166, 0, 0.301) 0%, rgba(255, 166, 0, 0.486) 100%) no-repeat;
-  background-size: 0% 2px; 
-  background-position: left bottom; 
-  transition: background-size 0.3s ease; 
-} */
-/* .right h4:hover {
-  background-size: 100% 2px;
-  color: orange;
-  border: 1px solid red;
-} */
+
 
   .right h4::before,
   .right h4::after {
-      content: "Explore more ⧉";
+      content: "Explore more ";
        position: absolute;      
       transition: transform 0.1s ease;
       }
@@ -521,21 +515,18 @@ text-transform: uppercase;
  
   
   .right h4:hover::before {
-      transform: translateY(-3px);
+      transform: translateY(-2px);
   }
 
   .right h4:hover::after {
-      transform: translateY(3px);
+      transform: translateY(2px);
   }
 
-.right h4 .orange-symbol {
-            color: orange ;
-        }
-  .right p{
-    font-family: open-sans;
-       font-size: larger;
-             }
 
+  .right p{
+           font-size: 1.1rem;   
+         
+             }
       
 .right_container{
 margin-top: 51px;
@@ -555,7 +546,6 @@ section{
      }
 
 
-
   .skills_and_tools.card_img{
 width: 80%;
 border: 1px solid rgb(136, 118, 118);
@@ -565,8 +555,8 @@ border: 1px solid rgb(136, 118, 118);
     display: flex;
     justify-content: space-between;
     width: 80%;
-    background-image: url(Asset/wallpaper.png);
-     background-color: rgb(46, 43, 43);
+    background-image: url(Asset/card_wallpaper.png);
+     background-color: rgba(15, 12, 12, 0.829);
      background-blend-mode:soft-light;
         padding: 20PX;
     margin-bottom: 50px;
@@ -574,16 +564,15 @@ border: 1px solid rgb(136, 118, 118);
    }
 
   section .card:hover{
-    transform: translatex(26px);   
+    transform: translateX(26px);   
      }
 
      #skills_and_tools .card_img{ 
       transition: transform 0.3s ease, font-size 0.7s ease;
      }
      #skills_and_tools .card_img:hover{ 
-      transform: translatex(3px);   
+      transform: translateX(3px);   
      }
-
 
 
  section .card_img{
@@ -599,24 +588,22 @@ color: white;
    }
  section .link_p{
   text-decoration: none;
-  color: #111102;
+  color: #000000;
   background-color:rgb(231, 179, 7);
-/* border-radius: 45px; */
 padding: 6px;
 margin-right: 8px;
 width: 30px;
 height: 30px;
 border-radius: 2px;
-/* border: 1px solid rgb(128, 124, 114); */
 }
+
 section .link_p:hover{
     background-color: white;
    
   }
 
 section .explore_more{
-  color:black;
-   position:relative;
+    position:relative;
   top: -30px;
 }
 
@@ -632,15 +619,36 @@ section .explore_more{
     font-size: 2rem;
     margin-bottom: 10px;
     color: rgb(231, 179, 7);
+    font-weight: 900;
   }
 
   .section .blog .card h3{
+    color:rgb(252, 251, 250);
+
+  }
+
+  .section .blog .card div{
+  padding: 10px;
+  }
+
+  .section .ui_ux{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 2fr));
+    gap:11px;
+  }
+
+  .section .ui_ux .card{
+    column-gap: 55px;
+    }
+
+
+  .section .ui_ux .card h3{
     color:rgb(231, 179, 7);
   }
 
-  .section .blog .card p{
-    color: white;
-   
+  .section .card p{
+    color:white;
+    font-size: 1rem;
   }
   
   .section-content {
@@ -650,7 +658,9 @@ section .explore_more{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
  
-  /* Footer styles */
+
+
+  /*########## Footer styles */
   footer { 
         background:white;
     color: #745e5e;
@@ -933,7 +943,7 @@ padding-top: 30px;
            .animation{
             display: none;
            }
-                       
+                       /*###### RIGHT SECTION ############  */
   .right {
     display: grid;
     text-align:justify;
@@ -967,6 +977,9 @@ section .skills_and_tools{
   .card_p {
       margin-top: 10px;
   }
+
+
+  
 /* Footer styles */
 footer{ 
  padding-bottom: 39px;
@@ -1008,7 +1021,7 @@ display: flex;
  
  .links_footer ul li:hover{
   color:rgba(241, 187, 9, 0.788);
-  transform: translatey(-4px);   
+  transform: translateY(-4px);   
  }
   
 footer .move_up a{

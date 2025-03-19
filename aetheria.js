@@ -1,3 +1,15 @@
+// MAIN_V1.HTML JS CODES
+
+const circle = document.getElementById("mouse_pointer");
+document.addEventListener("mousemove", (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+  circle.style.left = `${x}px`;
+  circle.style.top = `${y}px`;
+});
+
+
+
 // DARK MODE ICON TOGGLE//
 const toggle = document.getElementById('darkModeToggle');
 const icon = document.getElementById('icon');
@@ -35,67 +47,13 @@ explore1.classList.toggle('dark-mode');
 explore2.classList.toggle('dark-mode');
 explore3.classList.toggle('dark-mode');
 
-  if (document.body.classList.contains('dark-mode')) {
-    icon.textContent = '☀️';
-  } else { 
-    icon.textContent = '🌙';
-  }
+// if (document.body.classList.contains('dark-mode')) {
+//   icon.textContent = '☀️';
+// } else {
+//   icon.textContent = '🌙';
+// }
 });
 
-function toggleDarkMode() {
-  const explore = document.querySelectorAll('.explore_more');
-  explore.forEach(element => {
-      explore.classList.toggle('dark-mode');
-  });
-}
-
-
-
-// MY AI ROBOT //
-const robot = document.getElementById('robot');
-const mouth = document.querySelector('.mouth');
-
-// Initial position and very slow speed
-let posX = Math.random() * window.innerWidth;
-let posY = Math.random() * window.innerHeight;
-let speedX = (Math.random() - 0.5) * 0.2; // 
-let speedY = (Math.random() - 0.5) * 0.2; // 
-
-// Function to move the robot
-function moveRobot() {
-   posX += speedX;
-  posY += speedY;
-  // Collision detection
-  if (posX <= 0 || posX >= window.innerWidth - 30) { // Adjusted for smaller size
-    speedX *= -1; // Reverse horizontal direction
-  }
-  if (posY <= 0 || posY >= window.innerHeight - 35) { // Adjusted for smaller size
-    speedY *= -1; // Reverse vertical direction
-  }
-  // Apply position
-  robot.style.left = `${posX}px`;
-  robot.style.top = `${posY}px`;
-  // Continue animation
-  requestAnimationFrame(moveRobot);
-}
-
-// Add click event listener to change color
-robot.addEventListener('click', () => {
-  // Generate random color
-  const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-  robot.style.backgroundColor = randomColor;
-
-  // Change expression temporarily
-  mouth.style.backgroundColor = 'black';
-  mouth.style.width = '4px'; // Adjusted for smaller mouth
-  setTimeout(() => {
-    mouth.style.backgroundColor = 'white';
-    mouth.style.width = '6px'; // Reset to original size
-  }, 1000);
-});
-
-// Start moving the robot
-moveRobot();
 
 
 
@@ -109,6 +67,23 @@ menuIcon.classList.toggle("active") ;
 menuContainer.classList.toggle("hide");
 });
 
+
+
+// script.js
+const mouse_pointer = document.getElementById("mouse_pointer");
+
+// Track mouse movement
+document.addEventListener("mousemove", (e) => {
+  // Get mouse coordinates
+  const x = e.clientX;
+  const y = e.clientY;
+
+  // Update circle position
+  mouse_pointer.style.left = `${x}px`;
+  mouse_pointer.style.top = `${y}px`;
+});
+
+    
 
 
 

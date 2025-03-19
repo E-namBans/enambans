@@ -1,0 +1,21 @@
+
+:root{
+      /*======ROOT VARIABLES=============*/
+/* ---------color------------ */
+--color-black:#000000;
+--color-goldenrod:#daa520;
+--color-white:#ffffff;
+--color-blue:blue;
+--color-orange:#ffa500 ;
+/* ---------heading----------- */
+
+--heading-font-size-xl: 9.6rem;
+--heading-font-size-l: 1.5rem;
+--heading-font-size-m: 0rem;
+--heading-font-size-s: 0rem;
+
+ /*-----body-----------*/
+ --body-font-size-m: 2.2rem;
+ --body-font-size-s: 2.2rem;
+
+}

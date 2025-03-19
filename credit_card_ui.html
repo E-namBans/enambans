@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="credit_card_ui.css">
+    <title>Credit Card</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <header>   
+        <h1 id="visa">VISA
+        </h1>
+    </header>
+   
+    <div class="credit_card_form">
+             
+        <form action="/action_page.php" method="get">
+
+            <label for="card_number">CARD NUMBER</label>
+            <input  type="text" id="card_number" name="card_number" maxlength="16" size="14">
+
+            <label for="card_holders">CARD HOLDER NAME</label>
+            <input type="text" id="card_holders" name="card_holders" value="John Doe">
+
+            <div class="date_cvv">
+                <div>
+                    <label for="expiration_date">EXPIRATION DATE</label>
+                    <input type="month" id="month" name="month" class="month"  >
+                </div>
+                
+                <div class="cvv1">
+                    <label for="cvv">CVV</label> 
+                    <input type="text" id="cvv" name="cvv" maxlength="3" size="3" class="cvv" value="000">
+    
+                </div>
+               
+    
+                
+            </div>
+            <input type="submit" value="Submit" class="submit">
+          </form>
+
+    </div>
+
+
+</div>
+   
+</body>
+</html>
