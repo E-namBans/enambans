@@ -21,7 +21,7 @@ html{
     pointer-events: none;
     transform: translate(-50%, -50%);
     border: 1px solid rgba(180, 171, 171, 0.541);
-    z-index: 1;
+    z-index: 11;
   }
 
 
@@ -655,9 +655,8 @@ height:max-content;
   z-index: -1;
 justify-content: center;
 margin-top: -59px;
-
-
 }
+
 .right_about1 .right_about1_profile_pic img{
 
   border-bottom-left-radius: 45px;
@@ -854,9 +853,7 @@ width: 100%;
 
  .projects1_wrapper{    
   margin-top: 95px; 
-
    width: 85%;
-
 }
 
 .projects1_title{
@@ -915,16 +912,18 @@ transform: scale(1.01);
    } */
 
 .card_p{
-  width: 40%;
-   height: 40%;
+  /* width: 40%; */
+width: 100%;
+   height: 100%;
    visibility: hidden;
   opacity: 0;
-  position: absolute; 
+  /* position: absolute;  */
+  position: relative;
   background-color: #000000a2;
   color: white;
  text-align: center;
   transition: opacity 0.5s ease, visibility 0.9s ease-in-out;
-
+bottom: 199px !important;
    }
 
    .card:hover .card_p{
@@ -1207,7 +1206,6 @@ footer{
   display: none;
 }
 
-
   nav{
     display: none;
   }
@@ -1347,12 +1345,12 @@ section .home{
   width: 100%;
 }
 
-.about1{
-flex-direction: column-reverse;
-flex-direction: column-reverse;
-justify-content: center;
-align-items: center;
-
+/* ----ABOUT SECTION ------ */
+.about1flex{
+  flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 .left_about1{
@@ -1368,20 +1366,21 @@ margin-top: -120px;
   
 }
 .left_about1 .left_about1_wrapper h1{
-   text-align: left;
-   font-size: 4rem;
-     margin-top: 150px;
-   margin-bottom: 0;
-   color: orange; 
+   text-align: center;
+   font-size: 3rem;
+     margin-top: -810PX;
+      color: orange; 
+      margin-bottom: 900px;
  }
 
  .left_about1 .left_about_wrapper P{
-  text-align: justify;
- 
+  /* text-align: justify; */
+ /* justify-content: center; */
+ text-align: center;
  }
 
  .right_about1{
-  margin-top: 80px;
+  margin-top: 160px;
      width: 90%;
   /* margin-left: -30%; */
 }
@@ -1393,7 +1392,28 @@ border-radius: 30px;
 height:800px;
 }
 
+.about1 .image_concept{
+  grid-template-columns: 1fr 1fr;
+}
 
+/* --------PROJECTS SECTION---------- */
+.projects1{
+  flex-direction: column;
+}
+
+.projects1 .projects1_wrapper .projects1_title{
+  flex-direction: column-reverse;
+  margin-top: 10px !important;
+  }
+
+.projects1 .projects1_wrapper .projects1_title div img{
+ display: none;
+}
+
+.projects1 .projects1_wrapper .projects1_title .right_intro p{
+ width: 70vw;
+
+}
 
 .projects1_wrapper .card_wrapper{    
   display: grid;
@@ -1404,10 +1424,16 @@ height:800px;
 
   .projects1_wrapper .card_wrapper .card{ 
    transition: 0 all;
-   height: 350px;
-   padding-bottom: 60px;
-   overflow: hidden;
+   height: 70%;    
+   margin-top: 120px;
    }
+
+   .projects1_wrapper .card_wrapper .card .card_img img{ 
+   height: 600px;
+    width: 100%;
+    }
+
+   
 
    .projects1 .projects1_wrapper h1{
     color: orange;
@@ -1424,6 +1450,10 @@ height:800px;
 width: 100%;
   visibility: visible;
   opacity: 1;
+position: relative;
+height: 100%;
+margin-top: 18px;
+
    }
   
 
@@ -1436,6 +1466,32 @@ width: 100%;
   height: 30px;
  
 }
+
+
+.ui_ux_component_title{  
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui_ux_component_title div img{  
+ display:none
+}
+
+.ui_ux_component_title .right_intro  h1{
+ text-align: center;
+  }
+
+  .ui_ux_component_title .right_intro  p{
+   width: 100%;
+     }
+
+
+
+
+
+
+
 
 
 
