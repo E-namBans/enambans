@@ -849,11 +849,13 @@ animation: rotate-circle 292.5s infinite linear;
   align-items: center;
   overflow: hidden;  
 width: 100%;
+padding-bottom: 80px;
 }
 
  .projects1_wrapper{    
   margin-top: 95px; 
    width: 85%;
+   justify-content: center;
 }
 
 .projects1_title{
@@ -890,73 +892,113 @@ margin-top: 30px;
   margin-bottom: 10px;  
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
-gap:50px;
+gap:40px;
 }
 
 .projects1_wrapper .card_wrapper .card{ 
-  height: 100%;
-  width: 100%;
-  transition: 0.2s ease all;
- display: flex;
- flex-direction: column;
- /* align-items: center; */
- justify-content: center;
+ height: max-content;
+ width: 100%;
+ transition: 0.2s ease all;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 15px;
+cursor: pointer;
 }
 
-/* .projects1_wrapper .card_wrapper .card:hover{
-transform: scale(1.01);
-} */
-
-/* .projects1_wrapper .card_wrapper .card .card_img{
-  display: block; 
-   } */
-
-.card_p{
-  /* width: 40%; */
-width: 100%;
-   height: 100%;
-   visibility: hidden;
-  opacity: 0;
-  /* position: absolute;  */
-  position: relative;
-  background-color: #000000a2;
-  color: white;
- text-align: center;
-  transition: opacity 0.5s ease, visibility 0.9s ease-in-out;
-bottom: 199px !important;
+.projects1_wrapper .card_wrapper .card1{ 
+  background-color: rgba(191, 204, 202, 0.692);
    }
+   .projects1_wrapper .card_wrapper .card1:hover{ 
+    box-shadow: 1px 2px 11px 1px;
+    color:  rgba(191, 204, 202, 0.692);
+    transform: scale(1.04);     
+  }
 
-   .card:hover .card_p{
-    visibility: visible;
-    opacity: 1;
-   
-   }
+   .projects1_wrapper .card_wrapper .card2{ 
+    background: linear-gradient(85deg, rgb(39, 140, 207), white, rgba(218, 215, 32, 0.37));
+     }
+     .projects1_wrapper .card_wrapper .card2:hover{ 
+      box-shadow: 1px 2px 11px 1px;
+      background: linear-gradient(85deg, rgb(39, 140, 207), white, rgba(218, 215, 32, 0.37));
+      transform: scale(1.04);       
+    }
 
-   .projects1_wrapper .card_wrapper .card .card_p h2{
-  color:orange;
-  font-size: 1.5rem;
+     .projects1_wrapper .card_wrapper .card3{ 
+      background-color: rgb(255, 255, 255);
+       }
+       .projects1_wrapper .card_wrapper .card3:hover{ 
+        box-shadow: 1px 2px 11px 1px;
+        color:  rgb(255, 255, 255);
+        transform: scale(1.04);         
+      }
+
+       .projects1_wrapper .card_wrapper .card4{ 
+        background: linear-gradient(85deg, rgba(0, 0, 0, 0.034), white, rgba(218, 165, 32, 0.37));
+         }
+         .projects1_wrapper .card_wrapper .card4:hover{ 
+          box-shadow: 1px 2px 11px 1px;
+          background: linear-gradient(85deg, rgba(0, 0, 0, 0.034), white, rgba(218, 165, 32, 0.37));
+          transform: scale(1.04); 
+        }
+
+         .projects1_wrapper .card_wrapper .card5{ 
+          background-color: rgba(191, 204, 202, 0.692);
+           }
+           .projects1_wrapper .card_wrapper .card5:hover{ 
+            box-shadow: 1px 2px 11px 1px;
+            color: rgba(68, 131, 121, 0.692);
+            transform: scale(1.04);             
+          }
+
+           .projects1_wrapper .card_wrapper .card6{ 
+            background: linear-gradient(85deg, rgba(196, 85, 85, 0.034), rgb(185, 174, 174), rgba(128, 105, 98, 0.37));
+             }
+
+             .projects1_wrapper .card_wrapper .card6:hover{ 
+              box-shadow: 1px 2px 11px 1px;
+              color: rgba(68, 131, 121, 0.692);
+              transform: scale(1.04);
+               
+            }
+
+   .projects1_wrapper .card_wrapper .card  h3{
+    color: rgb(0, 0, 0);
+  font-size: 1.2rem;
  }
 
- .projects1_wrapper .card_wrapper .card .card_p p{
-  color:antiquewhite;
- text-align: center;
-  font-size: 1.1rem;
-  width: 100%;
+ .projects1_wrapper .card_wrapper .card  p{
+  align-items: center;
+  color: black;
+     font-size: 0.9rem;
+    margin-top: -14px;           
+   margin-left: 10px;
+   margin-right: 10px;
  
  }
 
-.projects1_wrapper .card_wrapper .card .card_p .link_p{
-  color: antiquewhite;
-  padding: 5px;     
-  width: 40px;
-  height: 40px;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: 0.3s ease-in;
+.projects1_wrapper .card_wrapper .card .link_p {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: fit-content;
+  padding-bottom: 1px;
 }
 
-.projects1_wrapper .card_wrapper .card .card_p .link_p:hover{
-  color: #ffffff;
+.projects1_wrapper .card_wrapper .card .link_p a{
+   text-decoration: none; 
+   color: black;
+   padding: 5px;     
+   width: 40px;
+   height: fit-content;
+   text-decoration: none;
+   border-radius: 30px;
+   transition: 0.3s ease-in;
+}
+
+.projects1_wrapper .card_wrapper .card .link_p a:hover{
+  color: #5f4646;
   padding-left: 12px;
   padding-right: 12px;
   border-left:1px solid ;
@@ -1022,7 +1064,7 @@ font-size: 2rem;
    }
 
  .ui_ux_component section .card{
- height: 450px;
+ height: 400px;
  width: 100%;
  transition: 0.2s ease all;
 display: flex;
@@ -1065,12 +1107,13 @@ cursor: pointer;
        color: black;
           font-size: 0.9rem;
          margin-top: -14px;           
-        
+        margin-left: 10px;
+        margin-right: 10px;
           }
 
           .ui_ux_component section .card3{
          
-            background: linear-gradient(85deg, black, white, rgba(218, 165, 32, 0.37));
+            background: linear-gradient(85deg, rgba(0, 0, 0, 0.034), white, rgba(218, 165, 32, 0.37));
             margin-bottom: 30px;
                  }
     
@@ -1415,57 +1458,7 @@ height:800px;
 
 }
 
-.projects1_wrapper .card_wrapper{    
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-  gap:50px;
-  padding: 40px;
-  }
 
-  .projects1_wrapper .card_wrapper .card{ 
-   transition: 0 all;
-   height: 70%;    
-   margin-top: 120px;
-   }
-
-   .projects1_wrapper .card_wrapper .card .card_img img{ 
-   height: 600px;
-    width: 100%;
-    }
-
-   
-
-   .projects1 .projects1_wrapper h1{
-    color: orange;
-   text-align: center;
-   letter-spacing: 0px;
-   font-size: 4rem;
-  
-  }
-  .projects1_wrapper h2{
-   text-align: center;
-   }
-
-.card_p{  
-width: 100%;
-  visibility: visible;
-  opacity: 1;
-position: relative;
-height: 100%;
-margin-top: 18px;
-
-   }
-  
-
-.projects1_wrapper .card_wrapper .card .card_p .link_p{
- 
-  padding: 6px;
-  margin-right: 8px;
- margin-bottom: 5px;
-  width: 30px;
-  height: 30px;
- 
-}
 
 
 .ui_ux_component_title{  
