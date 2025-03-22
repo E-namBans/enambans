@@ -1435,7 +1435,7 @@ height:800px;
 }
 
 .about1 .image_concept{
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr ;
 }
 
 /* --------PROJECTS SECTION---------- */
