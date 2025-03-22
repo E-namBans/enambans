@@ -289,8 +289,7 @@ section{
              
      
            .intro_aethera .intro_aethera_left h1{
-              width: 85%;
-              /* text-align: left; */
+              width: 85%;             
               border-bottom: 1px solid antiquewhite;
               border-bottom-style: dashed;
               font-size: 45px;
@@ -379,6 +378,10 @@ width:35%;
 
 
   @media (max-width:830px){
+    #mouse_pointer {
+    display: none;
+    }
+
     nav{
       display: none;
     }
@@ -501,24 +504,47 @@ header .menu-icon.active .bar:nth-child(3){
   transform: translate(-50%, -50%) rotate(-50deg);
 }
 
+/* NAVIGATION ARROW TO NAVIGATE THE PROJECTS */
+.navigation_arrow .back{
+  padding: 15px;
+  background-color:  #443d3d56;
+  z-index: 30;
+  width: 40px;
+  border-radius: 50%;
+       }
 
-
+       .navigation_arrow .next{
+        background-color:  #443d3d56;
+        z-index: 30;
+        width: 40px;
+        border-radius: 50%;
+      }
+      /*==== NAVIGATION ARROW TO NAVIGATE THE PROJECTS==== */
+    
 .intro_aethera{
   flex-direction: column;
   justify-content: center;  
   width: 100%;
 }
 
+.horizontal_line {      
+  margin-top: -32px;
+margin-left: 3%;
+
+    }
+
 .intro_aethera .intro_aethera_left h1{
-  width: 100vw ;
+width: 100%;
+
+
 text-align: center;
-  
+
     }
 
     .intro_aethera .intro_aethera_left p{
-      width: 90vw ;
-  align-items: center;
-margin-left: 10%;
+      width: 95% ;
+      margin-left: 2%;
+  text-align: center;
                 }
 
 
@@ -527,14 +553,33 @@ margin-left: 10%;
 }
 
               .img1 img{
-              width: 80vw ;
-              align-items: center;
-              margin-left: 20%;
+              width: 95% ;                  
              }
  
-
+             .intro_aethera div{
+              width:100%;             
+                 }
 
   }
 
+  .case_study h2{
+    text-align: center;
+     }
+
+  .case_study ul{
+    width: 70%;
+  }
+
+  .case_study p{
+    width: 95%;   
+    color: antiquewhite;
+    text-align: justify;
+    }
+
+    .image_concept{
+
+      text-align: center;
+        justify-content: center;
+     }
 
   
