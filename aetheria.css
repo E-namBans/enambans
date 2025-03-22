@@ -272,6 +272,7 @@ padding: 15px;
 
 section{
    margin-top: 62px;
+   margin-bottom: 60px;
 }
 
 .intro_aethera{
@@ -356,24 +357,10 @@ width:35%;
     gap:11px;
    }
 
-   .link_to_live_site h6{
-    font-size: 2rem;
-    color: white;
-    background-color: #000000;
-    border-radius: 30px;
-    padding: 10px;
-    transition: 0.3s ease-in-out;
-    
-  }
+
   
   
-  .link_to_live_site h6:hover{
-    font-size: 2rem;
-    color: white;
-    background-color: #000000;
-    padding-right: 50px;
-   padding-left: 50px;
-  }
+
 
 
 
@@ -535,8 +522,6 @@ margin-left: 3%;
 
 .intro_aethera .intro_aethera_left h1{
 width: 100%;
-
-
 text-align: center;
 
     }
@@ -560,7 +545,7 @@ text-align: center;
               width:100%;             
                  }
 
-  }
+  
 
   .case_study h2{
     text-align: center;
@@ -582,4 +567,4 @@ text-align: center;
         justify-content: center;
      }
 
-  
+    }
