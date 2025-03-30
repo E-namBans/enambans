@@ -1008,14 +1008,36 @@ cursor: pointer;
 
 .blog{
   font-family: 'Roboto';
-  background-color: #241e22;
+  background-color:white;
   width: 100%;
   overflow: hidden;  
   justify-content: center; 
 align-items: center;
 z-index: -1;
 }
+.blog_card{
+margin-top: 100px;
+margin-left: 2%;
+display: flex;
+/* flex-direction: column; */
+/* width: 200px; */
+align-items: center;
+padding-bottom: 20px;
+border-bottom: 1px solid red;
+}
 
+.blog_card_wrapper{
+  width: 700px;
+  border: 1px solid red;
+
+  }
+
+.blog_card .image{
+  width: 70%;
+ height: 100%;
+  border: 1px solid rgb(82, 43, 172);
+ text-align: center;
+  }
 
 
   /* ####### UI/UX COMPONENTS HUB ######### */
@@ -1241,6 +1263,28 @@ footer{
    
 
 
+/* ######## FOR TABLET DEVICES   398px */
+@media (max-width: 398px) {
+  .projects1_wrapper .card_wrapper{   
+   display: flex;
+   flex-direction: column;
+
+  }
+
+
+  .ui_ux_component section{
+    display: flex;
+    flex-direction: column;
+      }
+
+
+
+}
+
+
+
+
+
 /* ######## FOR TABLET DEVICES   768px */
 
 @media (max-width: 830px) {
@@ -1370,21 +1414,21 @@ header .menu-icon.active .bar:nth-child(3){
   transform: translate(-50%, -50%) rotate(-50deg);
 }
 
-
-
   
 section .home{
   flex-direction: column-reverse;
  width: 100%;
+ position: relative;
 }
 
 .left{
   width: 100%;
-  /* margin-top: 100px; */
+  background: rgba(0, 0, 0, 0);
 }
 
 .right{
   width: 100%;
+  position: absolute;
 }
 
 /* ----ABOUT SECTION ------ */
@@ -1454,15 +1498,14 @@ height:800px;
 
 .projects1 .projects1_wrapper .projects1_title .right_intro p{
  width: 80vw;
-
-
 }
+
  .projects1_title .right_intro {
      width: 100%;
      padding-left: 0;
        }
 
-
+/* --------UI UX COMPONENTS SECTION---------- */
 
 .ui_ux_component_title{  
   flex-direction: column-reverse;
