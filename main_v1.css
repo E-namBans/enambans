@@ -1433,7 +1433,7 @@ section .home{
 
 .left{
   width: 100%;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.753);
 }
 
 .right{
