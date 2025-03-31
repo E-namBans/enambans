@@ -957,9 +957,19 @@ cursor: pointer;
              .projects1_wrapper .card_wrapper .card6:hover{ 
               box-shadow: 1px 2px 11px 1px;
               color: rgba(68, 131, 121, 0.692);
-              transform: scale(1.04);
-               
+              transform: scale(1.04);               
             }
+
+            .projects1_wrapper .card_wrapper .card7{ 
+              background: linear-gradient(85deg, rgba(110, 106, 106, 0.034), rgb(108, 117, 105), rgba(219, 216, 215, 0.37));
+               }
+  
+               .projects1_wrapper .card_wrapper .card7:hover{ 
+                box-shadow: 1px 2px 11px 1px;
+                color: rgba(163, 153, 60, 0.692);
+                transform: scale(1.04);               
+              }
+  
 
    .projects1_wrapper .card_wrapper .card  h3{
     color: rgb(0, 0, 0);
