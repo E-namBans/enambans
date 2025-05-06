@@ -12,24 +12,13 @@ html{
       overflow-x: hidden;
     /* background-color: rgb(0, 0, 0); */
   }
-/* ######### MOUSE POINTER */
-  #mouse_pointer {
-    width: 55px; 
-    height: 55px;
-        border-radius: 50%; 
-    position: absolute; 
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    border: 1px solid rgba(180, 171, 171, 0.541);
-    z-index: 11;
-  }
 
 
   /* ########## LOGO DESIGN ############## */
 .logo_wrapper{
   position: fixed;
   top: 8px;
-  left: 70px;      
+  left: 40px;      
      width: 112px;
             height: 50px; 
             cursor:pointer;    
@@ -50,13 +39,8 @@ html{
 margin-bottom: 4px;
 width: 29px;
 height: 11px;
-
 }
 
-.line:nth-child(1):hover{
-  background: linear-gradient(to right, rgb(218, 4, 4) 0%, rgb(216, 18, 18) 50%, rgb(184, 46, 46) 100%);
-  transform: scale(1.4);
-}
 
 .line:nth-child(2){   
 rotate: -8deg;
@@ -219,8 +203,7 @@ nav .nav_ul li{
   list-style: none;
 }
 
-nav .nav_ul li:hover{
- 
+nav .nav_ul li:hover{ 
  border-radius: 20px;
 }
 
@@ -228,7 +211,7 @@ nav .nav_ul li a{
   text-decoration: none;
   color: #835a5a; 
   font-weight: bolder;
-font-size: 1.1rem;
+font-size: 1rem;
 background-color: rgb(233, 231, 230);
 border-radius: 20px;
   padding: 7px;
@@ -448,7 +431,7 @@ left:4%;
 }
 
 .phone {
-    width: 240px;
+    width: 258px;
     height: 440px;
     position: absolute;   
   }
@@ -461,7 +444,7 @@ left:4%;
     display: flex;
     flex-direction: column;  
     align-items: center;
-    border: 1px solid red;
+    border: 1px solid;
     border-top-color: #ffcc00;
     border-right-color:#ffcc00;
     border-left-color: #ffcc00;
@@ -473,24 +456,25 @@ left:4%;
    
   .dynamic_island {
     margin-top: 10px;
-   width:45%;
-height:20px;
-background-color: black;
-border-radius: 20px;
+   width:25%;
+border-radius: 65px;
+border: 7px solid rgba(0, 0, 0, 0.801);
   }
     .date{   
     margin-top: 20px;
     display: inline-block;
+    font-weight: 800;
   }
 
   .intro_left h1{
 font-size: 2.5rem;
-/* font-style: oblique; */
+text-align: center;
+margin-top: 7px;
   }
 
   .content {
     position: relative;
-      /* bottom: -10px; */
+      bottom: 19px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -508,16 +492,14 @@ font-size: 2.5rem;
     background-color: #8d8a8a;    
    justify-content: space-between;
    align-items: center;
-   border: 1px solid rgb(119, 44, 44);
+   /* border: 1px solid rgb(119, 44, 44); */
  }
 
  .news1_links{
-  position: relative;
-  
+  position: relative;  
  }
 
  .news1_links_footer{
-
   position: absolute;
   bottom: 50px;
   left: -25px;
@@ -536,9 +518,10 @@ width: 90%;
     width: 75px;
     height: 3.5px;
     background: #fffcfc;
+    border: 1.5px solid rgb(255, 255, 255);
    border-radius: 30px; 
    position: relative;
- bottom: -10px;
+ bottom: 20px;
     box-shadow: 0 0 10px rgba(230, 208, 11, 0.8);
       } 
 
@@ -844,6 +827,7 @@ animation: rotate-circle 292.5s infinite linear;
 .projects1{
   font-family: 'Roboto';
   background-color: #241e22;
+  /* background-color: #1a1518; */
   display: flex;
   justify-content: center; 
   align-items: center;
