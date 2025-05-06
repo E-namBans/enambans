@@ -29,8 +29,8 @@ body {
         
   #robot {
     z-index: 10;
-    width: 30px; /* Smaller width */
-    height: 35px; /* Smaller height */
+    width: 30px; 
+    height: 35px; 
     background-color: rgba(153, 163, 63, 0.5); 
     border-radius: 50%;
     position: fixed;
@@ -48,11 +48,11 @@ body {
   .face {
     position: relative;
     width: 20px; 
-    height: 15px; /* Scaled down */
+    height: 15px; 
   }
   
   .eye {
-    width: 3px; /* Smaller eyes */
+    width: 3px; 
     height: 3px;
     background-color: white;
     border-radius: 50%;
@@ -70,7 +70,7 @@ body {
   }
   
   .mouth {
-    width: 6px; /* Smaller mouth */
+    width: 6px; 
     height: 2px;
     background-color: white;
     border-radius: 10px;
@@ -622,8 +622,11 @@ section .explore_more{
 
   .section .blog .card p{
     color:rgb(252, 251, 250);
-
   }
+
+  /* .section .blog .card h3{
+    color:rgb(252, 251, 250);
+  } */
 
   .section .blog .card div{
   padding: 10px;
@@ -631,13 +634,17 @@ section .explore_more{
 
   .section .ui_ux{
    
-        display: grid;
+        /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
-    gap:39px;
-  }
+    gap:39px; */
 
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 2fr));
+    gap:11px; */
+ 
+}
   .section .ui_ux .card{
-    column-gap: 45px;
+    column-gap: 55px;
       }
 
 
