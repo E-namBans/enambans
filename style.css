@@ -620,7 +620,7 @@ section .explore_more{
     font-weight: 900;
   }
 
-  .section .blog .card h3{
+  .section .blog .card p{
     color:rgb(252, 251, 250);
 
   }
@@ -630,24 +630,26 @@ section .explore_more{
   }
 
   .section .ui_ux{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(390px, 2fr));
-    gap:11px;
+   
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+    gap:39px;
   }
 
   .section .ui_ux .card{
-    column-gap: 55px;
-    }
+    column-gap: 45px;
+      }
 
 
   .section .ui_ux .card h3{
     color:rgb(231, 179, 7);
+   
   }
 
   .section .card p{
     color:white;
     font-size: 1rem;
-  }
+      }
   
   .section-content {
     background-color:white;
@@ -658,7 +660,7 @@ section .explore_more{
  
 
 
-  /*########## Footer styles */
+  /*########## Footer styles ########### */
   footer { 
         background:white;
     color: #745e5e;
