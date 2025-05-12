@@ -623,7 +623,16 @@ padding-top: 60px;
 
 
 .left_about1 .left_about1_wrapper P{
-  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
+ font-size: 1.1rem;
+ color:antiquewhite;
+  text-align: left;
+ width: 90%;
+
+}
+
+.left_about1 .left_about1_wrapper i{
+  /* font-family: 'Roboto'; */
  font-size: 1.1rem;
  color:antiquewhite;
   text-align: left;
@@ -827,7 +836,6 @@ animation: rotate-circle 292.5s infinite linear;
 .projects1{
   font-family: 'Roboto';
   background-color: #241e22;
-  /* background-color: #1a1518; */
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -855,6 +863,7 @@ margin-top: 30px;
   .projects1_title .right_intro{
   width:50%;   
     padding-left: 25px;
+
     }
 
 
@@ -864,9 +873,9 @@ margin-top: 30px;
    
     }
     .projects1_title .right_intro p{
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       text-align: justify;
-      width: 70%;
+      width: 90%;
       color: antiquewhite;
        }
 
@@ -1002,36 +1011,30 @@ cursor: pointer;
 
 .blog{
   font-family: 'Roboto';
-  background-color:white;
+ background-color: #241e22;
   width: 100%;
+  height: 100vh;
   overflow: hidden;  
   justify-content: center; 
 align-items: center;
 z-index: -1;
 }
-.blog_card{
-margin-top: 100px;
-margin-left: 2%;
-display: flex;
-/* flex-direction: column; */
-/* width: 200px; */
-align-items: center;
-padding-bottom: 20px;
-border-bottom: 1px solid red;
+.blog_card_wrapper{
+   width: 100%;
+   display: flex;
+   justify-content: center;
 }
 
-.blog_card_wrapper{
-  width: 700px;
-  border: 1px solid red;
+.blog_card{
+  margin-top: 190px;
+  width: 80%;
+  border: 2px solid rgb(238, 255, 0);
+}
 
-  }
-
-.blog_card .image{
-  width: 70%;
- height: 100%;
-  border: 1px solid rgb(82, 43, 172);
- text-align: center;
-  }
+.blog_card h1{
+  text-align: center;
+  color: white;
+}
 
 
   /* ####### UI/UX COMPONENTS HUB ######### */
